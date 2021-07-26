@@ -1,0 +1,404 @@
+26.5. legs 16:30
+  Squat 50 4x12
+  Dead lift 40 4x8
+  Leg press 93 4x12
+  Seated calf raise 30 4x12
+  Prone leg curl 35 4x12
+  Abdomenin 27 4x12
+  Abdomenout 32 4x12
+  Leg extension 30 4x12
+  Glute isolation 24 4x12
+
+27.5. push 21:00
+  Bench 42.5 5x10
+  Diamond push up 4x10
+  Incline bench 30 4x10
+  Dip 4x10
+  Shoulder press 30 2x6 20 2x10
+  Triceps extension 18 3x8
+  Pec fly 44 4x8
+
+28.5. pull 16:00
+  Pull up 4x10
+  Chin up 4x10
+  Cable row 17.5 4x8
+  Dumbbell row 17.5 4x8
+  Rear delt 5 4x10
+  Biceps curl 10 4x10
+
+29.5. legs 10:00
+  Squat 17.5 4x12
+  Romanian dead lift 17.5 4x12
+  Dead lift 17.5 4x12
+  Squat 1x30
+  Pistol squat 1x8
+
+30.5. Push 10:00
+  Push up 4x12
+  Diamond push up 4x12
+  Dumbbell fly 10 4x12
+  Dumbbell bench 10 4x12
+
+31.5. Legs 16:00
+  Squat 50 4x10
+  Dead lift 50 4x10
+  Seated calf raise 30 4x12
+  Leg press 114 4x12
+  Abdomenin 32 4x12
+  Abdomenout 32 4x12
+  Leg extension 35 3x12
+  Prone leg curl 35 4x12
+  Pull down 45 4x12
+  Cable row 45 2x12
+
+1.6. Push 18:30
+  Pull up 4x6
+  Triceps chair 4x12
+  Bench 50 2x6 40 2x10
+  Incline bench 37.5 2x6 32.5 2x6
+  Shoulder press 15 4x8
+  Dip 4x12
+  Pec fly 44 4x10
+  Triceps extension 23 2x8 18 2x10
+
+2.6. Pull 19:00
+  Pull up 4x8
+  Cable row 39 4x10
+  Chin up 4x8
+  Shrug 15 4x12
+  Isolated seated row 20 4x10
+  Cable pull 18 2x10
+  Biceps curl 10 4x10
+  Face pull 18 4x10
+
+3.6. Cardio 19:00
+  Running 10 5km
+  Hiking 30 12km
+
+4.6. Push 21:30
+  Bench 50 3x8 40 30 1x10
+  Incline bench 40 4x6
+  Dip 4x12
+  Pec fly 49 4x10
+  Triceps chair 4x12
+
+5.6. Pull 15:00
+  Pull up 4x8
+  Cable row 39 4x10
+  Lat pull down 32 4x12
+  Isolated seated row 20 4x12
+  Rear delt 25 4x10
+  Cable ground pull 18 4x12
+  Face pull 23 4x10
+  Chin up 4x6
+  Biceps curl 10 4x10
+  Hyperextension 4x12
+  Standing calf raise 4x12
+
+6.6. Legs 21:30
+  Leg press 127 4x12
+  Squat 55 4x10
+  Dead lift 60 4x10 50 40 30 1x10
+  Prone leg curl  40 4x12
+  Seated calf raise 40 4x10
+  Abdomenin 36 4x12
+  Abdomenout 39 4x12
+  Glute isolation 29 4x12
+  Leg extension 40 4x10
+
+7.6. Push 21:30
+  Bench 55 1x6 50 1x8 40 4x12
+  Incline bench 40 1x6 30 4x8
+  Dip 3x12
+
+8.6. Pull 21:45
+  Pull up 4x8
+  Cable row 45 4x8
+  Lat pull down 39 4x8
+  Chin up 4x8
+
+9.6. Legs 16:45
+  Prone leg curl 45 4x12
+  Leg press 127 2x8
+  Squat 60 4x8
+  Dead lift 60 4x8
+  Abdomenin 45 4x12
+  Abdomenout 39 4x8
+  Seated calf raise 40 4x12
+
+10.6. Push 17:30
+  Bench 60 2x3 50 1x10 40 4x8
+  Shoulder press 15 4x10
+  Dip 4x12
+  Pec fly 49 4x12
+
+11.6. Pull 13:30
+  Cable row 45 4x10
+  Lat pull down 45 4x10
+  Chin up 4x10
+  Biceps curl 7.5 4x12
+  Face pull 23 4x12
+
+12.6. Legs 21:30
+  Leg press 45 66 93 141 155 1x12 175 1x10
+  Dead lift 40 50 60 1x12 70 80 1x10
+  Isolated standing calf raise 4x20
+  Abdomenin 23 1x12 32 1x12 41 1x12 52 1x10
+  Abdomenout 32 1x12 45 1x12 52 1x12 39 1x12
+
+13.6. Push 19:30
+  Bench 40 50 4x10 55 4x4 40 4x10
+  Incline bench 20 30 35 4x10 40 4x8
+  Dip 4x12
+  Triceps extension 23 4x8
+  Pec fly 54 4x10
+
+14.6. Pull 17:30
+  Barbell pull 20 30 40 50 1x12
+  Cable row 45 5x10
+  Lat pull down 39 1x10 45 3x10
+  Face pull 23 27 32 36 1x12
+  Chin up 4x12
+
+15.6. Legs 16:05
+  Push up 4x12
+  Leg press 39 59 100 141 155 175 182 1x12
+  Squat 30 40 50 60 1x10 70 1x8
+  Dead lift 50 60 70 80 1x10
+  Prone leg curl 50 4x8
+  Abdomenin 41 4x12
+  Abdomenout 39 4x10
+  Leg extension 45 4x10
+  Seated calf raise 4x10
+  Back extension 4x12
+
+16.6. Push 20:30
+  Push up 4x12
+  Incline bench 20 1x10
+  Bench 40 9x10
+  Dip 8x10
+  Triceps extension 27 4x10
+  Pec fly 49 8x10
+
+17.6. Pull 15:30
+  Cable row 45 4x10
+  Lat pull down 45 4x10
+  Front pull 50 4x10
+  Rear delt 39 4x8
+  Chin up 4x10
+  Shrug 20 4x12
+  Biceps curl 10 4x12
+  Pull up 4x8
+
+18.6. Legs 17:15
+  Leg press 59 80 100 120 1x12
+  Squat 40 1x12 60 3x12
+  Dead lift 60 1x12 40 8x12
+  Abdomenin 36 4x16
+  Abdomenout 35 4x12
+  Seated calf raise 40 4x12
+  Leg extension 50 4x12
+  Prone leg curl 50 4x12
+
+19.6. Push 19:30
+  Push up 2x12
+  Bench 60 1x4 50 1x12 40 8x10
+  Incline bench 20 2x10 40 1x10 30 8x10
+  Dip 5x12
+  Isolated triceps extension 4.5 6x12
+  Cable fly 4.5 9 14 18 1x12
+
+20.6. Pull 17:30
+  Pull up 3x8
+  Cable pull 52 3x10 25 5x12
+  Lat pull down 39 5x10
+  Rear delt 24 5x12
+  Biceps curl 12.5 5x10
+
+21.6. Legs 20:30
+  Leg press 73 100 127 148 1x12
+  Seated calf raise 40 4x12
+  Back extension 3x12
+  Abdomenout 41.5 4x12
+  Abdomenin 41 45 52 52 1x12
+  Leg extension 55 4x10
+  Prone leg curl 45 4x12
+
+22.6. Rest 10:00
+  Pull up 4x12
+
+23.6. Pull 20:00
+  Barbell pull 20 30 40 50 60 50 1x12
+  Dead lift 60 1x12 70 5x8
+  Isolated row 30 35 40 45 45 1x8
+  Rear delt 29 34 39 39 24 1x10
+  Lat pull down 45 52 52 45 1x10
+  Pull up 4x10
+  Biceps curl 10 4x10
+
+24.6. Push and legs 17:00
+  Squat 60 4x8
+  Bench 20 40 40 50 50 50 1x10
+  Seated calf raise 40 5x12
+  Back extension 3x12
+  Dip 5x12
+  Leg extension 55 50 2x10
+  Abdomenin 45 4x10
+  Abdomenout 36 4x12
+
+25.6. Pull 20:15
+  Dead lift 30 40 50 60 70 80 90 1x12 100 1x3
+  Cable row 32 45 52 59 1x10 66 1x6
+  Lat pull down 39 45 52 52 1x12
+  Rear delt 34 39 45 49 1x10
+
+26.6. Push 20:30
+  Bench 20 30 40 50 1x12 40 1x10
+  Shoulder press 30 4x10
+  Cable fly 18 4x10
+  Pec fly 54 2x10
+  Back extension 2x12
+  Isolated triceps extension 7 5x12
+  Shrug 50 4x12
+  GHD sit up 4x12
+  Hip thrust 40 60 80 100 1x12
+
+27.6. Legs 20:00
+  Squat 30 40 50 60 70 80 1x10 90 1x6
+  Seated calf raise 40 4x12
+  Abdomenin 49 49 56 63 4x12
+  Abdomenout 40 4x12
+  Prone leg curl 50 4x12
+  Leg extension 55 4x10
+
+28.6. Pull 20:45
+  Cable row 45 4x12
+  Cable biceps curl 45 4x6
+  Dead lift 40 50 60 70 90 1x10
+  Lat pull down 45 1x12 52 3x10
+  Rear delt 44 4x10
+  Lateral raise 5 4x10
+
+29.6. Push 20:00
+  Bench 20 40 50 50 1x10
+  Incline bench 20 1x12 30 3x12
+  Pec fly 64 4x10
+  Dip 4x12
+
+1.7. Legs 20:00
+  Bench 20 40 45 1x12
+  Leg press 45 93 127 155 1x12
+  Seated calf raise 50 4x10
+  Squat 50 70 80 80 1x10
+  Abdomenin 52 52 59 66 1x12
+  Abdomenout 45 4x8
+  Leg extension 60 4x10
+  Hip thrust 80 100 110 120 1x10
+  Prone leg curl 50 4x10
+
+2.7. Pull 21:00
+  Dead lift 60 80 90 100 1x10
+  Cable row 45 52 45 45 1x12
+  Lat pull down 45 54 45 45 1x10
+  Straight arm pull down 39 4x12
+  GHD sit up 4x12
+  Pull up 3x6
+
+3.7. Push 21:15
+  Bench 20 40 50 50 50 1x10
+  Incline bench 30 35 40 40 1x10
+  Shoulder press 30 40 50 55 1x10
+  Triceps extension 9 4x10
+
+4.7. Cardio 9:00
+  Sljeme
+
+5.7. Legs 20:30
+  Squat 40 60 70 80 1x10  85 1x4
+  Hip thrust 80 100 120 130 1x10
+  Seated calf raise 50 1x6 40 3x10
+  Leg extension 65 4x10
+  Abdomenin 52 59 66 73 1x12
+  Abdomenout 39 1x10 45 3x10
+  GHD sit up 3x12
+
+7.7. Push 19:30
+  Bench 40 1x12 50 3x10
+  Shoulder press 10 20 2x10
+  Triceps extension 9 9 14 11.5 1x10
+  Dip 4x12
+  Pec fly 69 64 1x8
+
+9.7. Pull 21:00
+  Dead lift 60 80 100 110 1x8
+  Cable row 52 1x12 45 1x12
+  Lat pull down 45 4x12
+  Biceps curl 12.5 4x12
+
+11.7. Legs 20:15
+  Squat 60 5x8
+  Hip thrust 80 100 120 140 160 1x12
+  Seated calf raise 40 4x12
+  Abdomenout 45 4x10
+  Abdomenin 59 66 73 79 1x12
+
+13.7. Push 20:30
+  Bench 40 50 50 50 1x10
+  Incline bench 20 40 2x10
+  Dip 0 0 5 10 1x12
+  Cable fly 9 14 2x10
+  Dumbbell fly 15 4x10
+  Triceps extension 14 4x12
+
+15.7. Pull 20:20
+  Dead lift 100 3x8 110 1x6
+  Cable pull 45 2x12
+  Lat pull down 45 4x12
+  Dumbbell row 20 2x12
+  GHD sit up 4x12
+  Pull up 4x8
+  Biceps curl 15 3x8 12 1x8
+
+17.7. Legs 20:30
+  Leg press 107 141 161 120 1x12 100 3x12
+  Hip thrust 110 130 140 150 1x12
+  Seated calf raise 40 4x12
+  Abdomenout 45 39 2x12
+  Abdomenin 59 66 73 79 1x12
+  Leg extension 65 70 2x12
+  Isolated standing calf raise 4x16
+
+19.7. Push 19:00
+  Bench 40 4x10 50 1x8
+  Incline bench 30 4x10
+  Dip 10 5 2x10
+  Cable fly 14 4x10
+  Dumbbell fly 17.5 4x6
+  Triceps extension 14 4x10
+  Face pull 30 4x12
+
+21.7. Pull 20:30
+  Dead lift 60 4x10
+  Cable row 32 4x12
+  Lat pull down 45 4x10
+  Pull up 2x10 2x6
+  Biceps curl 12.5 4x10
+
+23.7. Legs 20:45
+  Leg press 120 3x12 148 175 2x12
+  Hip thrust 110 130 150 160 1x12
+  Seated calf raise 45 5x12
+  Abdomenout 45 5x12
+  Abdomenin 59 63 69 73 73 1x12
+  Leg extension 60 65 70 75 75 1x12
+  GHD sit up 10 4x12
+
+24.7. Arms 18:00
+  Triceps extension 5x12
+  Biceps curl 15 4x10
+  Back lat pull down 25 4x12
+
+25.7. Push 20:20
+  Push up 5x10
+  Dip 5x10
+  Pike push up 5x10
