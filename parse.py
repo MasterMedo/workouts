@@ -73,13 +73,10 @@ rcParams.update({"figure.autolayout": True})
 sns.set(font_scale=1.5)
 
 df = pd.DataFrame(data, columns=["date", "exercise", "sets", "reps", "weight"])
-i = 0
 for exercise in df.groupby("exercise"):
     volumes = []
     maxes = []
     dates = []
-    i += 1
-    print(i)
     for day in exercise[1].groupby("date"):
         volume = 0
         max_ = 0
