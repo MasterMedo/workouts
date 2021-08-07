@@ -99,7 +99,7 @@
   Leg press 127 4x12
   Squat 55 4x10
   Dead lift 60 4x10 50 40 30 1x10
-  Prone leg curl  40 4x12
+  Prone leg curl 40 4x12
   Seated calf raise 40 4x10
   Abdomenin 36 4x12
   Abdomenout 39 4x12
@@ -402,3 +402,60 @@
   Push up 5x10
   Dip 5x10
   Pike push up 5x10
+
+27.7. Pull 15:00
+  Dead lift 30
+  Back lat 25 4x12
+  Dumbell row 15 4x12
+  Swim 30min 2km
+
+29.7. Legs 15:00
+  Split squat 30 4x12
+  Squat 4x12
+  Isolated standing calf raise 4x20
+  Swim 30min 2km
+
+31.7. Push 20:00
+  Bench 30 40 50 50 1x10
+  Shoulder press 15 10 2x10
+  Dip 10 4x8
+  Triceps extension 9 11.3 2x12
+  Pec fly 54 64 2x12
+  GHD sit up 2x12
+  Back extension 2x12
+
+1.8.
+  Isolated standing calf raise 4x20
+  Squat 4x12
+
+2.8. Pull 15:00
+  Dead lift 30 4x12
+  Pull up 3x12
+  Isolated standing calf raise 4x20
+  Squat 4x12
+
+3.8.
+  Isolated standing calf raise 4x20
+  Squat 4x12
+
+4.8. Legs 21:00
+  Seated calf raise 25 4x10
+  Leg extension 70 4x10
+  Abdomenout 45 4x12
+  Abdomenin 59 66 73 79 1x12
+  Prone leg curl 45 4x12
+  Isolated standing calf raise 4x20
+  Squat 4x12
+
+5.8.
+  Isolated standing calf raise 4x20
+  Squat 4x12
+
+6.8. Push 10:00
+  Isolated standing calf raise 4x20
+  Squat 4x12
+  Dumbbell fly 15 4x12
+  Push up 4x12
+  Dumbbell over head press 10 4x12
+  Dip 4x12
+  Triceps chair 4x12
