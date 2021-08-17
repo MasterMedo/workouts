@@ -1,0 +1,5 @@
+id,name,male weight,female weight,average weight
+head,head,0.0826,0.082,0.0823
+trunk,trunk,0.4736,0.4522,0.4629
+arm,arm,0.057,0.0497,0.05335
+leg,leg,0.1668,0.1843,0.17555
