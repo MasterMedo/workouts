@@ -6,7 +6,15 @@ from bs4 import BeautifulSoup
 
 
 exercises_filename = "exercises.csv"
-fieldnames = ["id", "name", "muscle", "equipment", "description", "benefits", "instructions"]
+fieldnames = [
+    "id",
+    "name",
+    "muscle",
+    "equipment",
+    "description",
+    "benefits",
+    "instructions",
+]
 headers = {
     "authority": "www.bodybuilding.com",
     "x-requested-with": "XMLHttpRequest",
@@ -103,9 +111,7 @@ def get_benefits(soup: BeautifulSoup) -> str:
     if result is None:
         return ""
 
-    return "\n".join(
-        li.text.strip() for li in result.find_all("li")
-    )
+    return "\n".join(li.text.strip() for li in result.find_all("li"))
 
 
 def get_instructions(soup: BeautifulSoup) -> str:
@@ -114,12 +120,11 @@ def get_instructions(soup: BeautifulSoup) -> str:
     if result is None:
         return ""
 
-    return "\n".join(
-        li.text.strip() for li in result.find_all("li")
-    )
+    return "\n".join(li.text.strip() for li in result.find_all("li"))
 
 
 if not os.path.isfile(exercises_filename):
     with open(exercises_filename, "w") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
+        writer.writeheader()
         scrape_exercises(writer)
