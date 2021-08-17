@@ -1,0 +1,18 @@
+id,name,segment,position
+abdominals,abdominals,abdomen,forward
+abductors,abductors,pelvis,forward
+adductors,adductors,pelvis,forward
+biceps,biceps,upper-arm,forward
+chest,chest,thorax,forward
+calves,calves,leg,back
+forearms,forearms,forearm,forward
+glutes,glutes,pelvis,back
+hamstrings,hamstrings,thigh,back
+lats,lats,thorax,back
+lower-back,lower back,thorax,back
+middle-back,middle back,thorax,back
+neck,neck,head,forward
+quadriceps,quadriceps,thigh,forward
+shoulders,shoulders,upper-arm,forward
+traps,traps,thorax,back
+triceps,triceps,upper-arm,back
