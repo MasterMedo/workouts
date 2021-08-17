@@ -1,0 +1,18 @@
+latin name, english name, body part,
+Rectus abdominis,Abdominals,Torso
+Abductors,Hip
+Adductors,Legs
+Biceps,Arms
+Chest,Torso
+Calves,Legs
+Forearms,Arms
+Glutes,Legs
+Hamstrings,Legs
+Lats,Torso
+Lower Back,Back
+Middle Back,Back
+Neck,Torso
+Quadriceps,Legs
+Shoulders,Torso
+Traps,Back
+Triceps,Arms
