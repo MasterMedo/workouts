@@ -2,6 +2,11 @@ import csv
 
 from datetime import datetime
 
+
+with open("datasets/exercises/exercises.csv") as f:
+    exercises = list(csv.DictReader(f))
+names = {exercise["name"].lower().replace("-", " ") for exercise in exercises}
+
 with open("workouts.txt", "r") as f:
     workouts = f.read().split("\n\n")
 
@@ -15,7 +20,7 @@ for workout in workouts:
     for entry in workout:
         i = 0
 
-        exercise = ''
+        exercise = ""
         while i < len(entry) and (entry[i].isalpha() or entry[i].isspace()):
             exercise += entry[i]
             i += 1
@@ -23,22 +28,22 @@ for workout in workouts:
 
         lifts = []
         while i < len(entry):
-            weight = ''
-            while i < len(entry) and entry[i] != 'x':
+            weight = ""
+            while i < len(entry) and entry[i] != "x":
                 weight += entry[i]
                 i += 1
 
-            repetition = ''
-            index = weight.rfind(' ')
+            repetition = ""
+            index = weight.rfind(" ")
             repetition = weight[index:] if index > -1 else weight
-            weight = weight[:index] if index >= -1 else ''
+            weight = weight[:index] if index >= -1 else ""
 
-            while i < len(entry) and entry[i] != ' ':
+            while i < len(entry) and entry[i] != " ":
                 repetition += entry[i]
                 i += 1
 
             try:
-                sets, reps = map(int, repetition.split('x'))
+                sets, reps = map(int, repetition.split("x"))
                 for w in weight.strip().split():
                     lifts.append((sets, reps, float(w)))
                 else:
@@ -48,13 +53,7 @@ for workout in workouts:
                 pass
 
         for sets, reps, weight in lifts:
-            data.append((
-                date,
-                exercise,
-                sets,
-                reps,
-                weight
-            ))
+            data.append((date, exercise, sets, reps, weight))
         # print(date, description, time)
         # print(lifts)
     # print()
@@ -89,12 +88,16 @@ for exercise in df.groupby("exercise"):
         volumes.append(volume)
         dates.append(day[0])
 
+    if exercise[0] not in names:
+        print(f"exercise: {exercise[0]} not found")
+        continue
+
     if len(dates) > 5:
         dates = list(matplotlib.dates.date2num(dates))
         fig, axs = plt.subplots(2)
-        fig.suptitle(exercise[0])
-        axs[0].plot_date(dates, volumes, 'b-')
-        axs[0].set(ylabel='volume [kg]')
-        axs[1].plot_date(dates, maxes, 'r-')
-        axs[1].set(ylabel='max [kg]')
+        fig.suptitle(exercise[0].title())
+        axs[0].plot_date(dates, volumes, "b-")
+        axs[0].set(ylabel="volume [kg]")
+        axs[1].plot_date(dates, maxes, "r-")
+        axs[1].set(ylabel="max [kg]")
         plt.show()

@@ -1,7 +1,7 @@
-<p align="center">
-  <img src="" width="300"/>
-</p>
-<p align="center">Test your typing speed without leaving the terminal.</p>
+<!-- <p align="center"> -->
+<!--   <img src="" width="300"/> -->
+<!-- </p> -->
+<p align="center">Track workouts and progress steadily.</p>
 
 <p align="center">
   <a href="https://github.com/mastermedo/workouts/LICENSE">
