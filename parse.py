@@ -2,6 +2,11 @@ import csv
 
 from datetime import datetime
 
+
+with open("datasets/exercises/exercises.csv") as f:
+    exercises = list(csv.DictReader(f))
+names = {exercise["name"].lower().replace("-", " ") for exercise in exercises}
+
 with open("workouts.txt", "r") as f:
     workouts = f.read().split("\n\n")
 
@@ -89,10 +94,14 @@ for exercise in df.groupby("exercise"):
         volumes.append(volume)
         dates.append(day[0])
 
+    if exercise[0] not in names:
+        print(f"exercise: {exercise[0]} not found")
+        continue
+
     if len(dates) > 5:
         dates = list(matplotlib.dates.date2num(dates))
         fig, axs = plt.subplots(2)
-        fig.suptitle(exercise[0])
+        fig.suptitle(exercise[0].title())
         axs[0].plot_date(dates, volumes, 'b-')
         axs[0].set(ylabel='volume [kg]')
         axs[1].plot_date(dates, maxes, 'r-')
