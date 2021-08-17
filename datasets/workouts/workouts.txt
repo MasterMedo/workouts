@@ -477,3 +477,9 @@
   pullups 4x10
   dumbbell bicep curl 15 4x10
   bent over plate rear delt raise 5 4x12
+
+14.8. push 20:30
+  barbell bench press wide grip 20 40 50 50 50 1x10
+  chest dip 10 15 10 10 1x10
+  triceps pushdown 14 1x10 11.3 3x10
+  butterfly 69 2x10
