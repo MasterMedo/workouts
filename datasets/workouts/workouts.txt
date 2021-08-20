@@ -21,7 +21,7 @@
 28.5. pull 16:00
   pullups 4x10
   chin up 4x10
-  up seated cable row 17.5 4x8
+  seated cable rows 17.5 4x8
   dumbbell bent over row 17.5 4x8
   reverse machine flyes 5 4x10
   dumbbell bicep curl 10 4x10
@@ -48,7 +48,7 @@
   leg extension 35 3x12
   lying leg curl 35 4x12
   lat pull down 45 4x12
-  up seated cable row 45 2x12
+  seated cable rows 45 2x12
 
 1.6. push 18:30
   pullups 4x6
@@ -62,7 +62,7 @@
 
 2.6. pull 19:00
   pullups 4x8
-  up seated cable row 39 4x10
+  seated cable rows 39 4x10
   chin up 4x8
   standing dumbbell shrug 15 4x12
   machine low row 20 4x10
@@ -83,7 +83,7 @@
 
 5.6. pull 15:00
   pullups 4x8
-  up seated cable row 39 4x10
+  seated cable rows 39 4x10
   lat pull down 32 4x12
   machine low row 20 4x12
   reverse machine flyes 25 4x10
@@ -112,7 +112,7 @@
 
 8.6. pull 21:45
   pullups 4x8
-  up seated cable row 45 4x8
+  seated cable rows 45 4x8
   lat pull down 39 4x8
   chin up 4x8
 
@@ -132,7 +132,7 @@
   butterfly 49 4x12
 
 11.6. pull 13:30
-  up seated cable row 45 4x10
+  seated cable rows 45 4x10
   lat pull down 45 4x10
   chin up 4x10
   dumbbell bicep curl 7.5 4x12
@@ -154,7 +154,7 @@
 
 14.6. pull 17:30
   barbell deadlift bent row complex 20 30 40 50 1x12
-  up seated cable row 45 5x10
+  seated cable rows 45 5x10
   lat pull down 39 1x10 45 3x10
   standing face pull 23 27 32 36 1x12
   chin up 4x12
@@ -180,7 +180,7 @@
   butterfly 49 8x10
 
 17.6. pull 15:30
-  up seated cable row 45 4x10
+  seated cable rows 45 4x10
   lat pull down 45 4x10
   seated cable rows 50 4x10
   reverse machine flyes 39 4x8
@@ -247,7 +247,7 @@
 
 25.6. pull 20:15
   barbell deadlift 30 40 50 60 70 80 90 1x12 100 1x3
-  up seated cable row 32 45 52 59 1x10 66 1x6
+  seated cable rows 32 45 52 59 1x10 66 1x6
   lat pull down 39 45 52 52 1x12
   reverse machine flyes 34 39 45 49 1x10
 
@@ -271,7 +271,7 @@
   leg extension 55 4x10
 
 28.6. pull 20:45
-  up seated cable row 45 4x12
+  seated cable rows 45 4x12
   machine bicep curl 45 4x6
   barbell deadlift 40 50 60 70 90 1x10
   lat pull down 45 1x12 52 3x10
@@ -297,7 +297,7 @@
 
 2.7. pull 21:00
   barbell deadlift 60 80 90 100 1x10
-  up seated cable row 45 52 45 45 1x12
+  seated cable rows 45 52 45 45 1x12
   lat pull down 45 54 45 45 1x10
   straight arm pulldown 39 4x12
   ghd sit up 4x12
@@ -330,7 +330,7 @@
 
 9.7. pull 21:00
   barbell deadlift 60 80 100 110 1x8
-  up seated cable row 52 1x12 45 1x12
+  seated cable rows 52 1x12 45 1x12
   lat pull down 45 4x12
   dumbbell bicep curl 12.5 4x12
 
@@ -378,7 +378,7 @@
 
 21.7. pull 20:30
   barbell deadlift 60 4x10
-  up seated cable row 32 4x12
+  seated cable rows 32 4x12
   lat pull down 45 4x10
   pullups 2x10 2x6
   dumbbell bicep curl 12.5 4x10
@@ -483,3 +483,12 @@
   chest dip 10 15 10 10 1x10
   triceps pushdown 14 1x10 11.3 3x10
   butterfly 69 2x10
+
+16.8. pull 20:30
+  barbell deadlift 60 4x12
+  pullups 4x10
+  dumbbell bicep curl 12.5 4x12
+  seated cable rows 45 4x12
+
+18.8. legs 6:30
+  hiking 42km 9h
