@@ -5,7 +5,7 @@ from datetime import datetime
 
 with open("../datasets/exercises/bodybuilding.com/exercises.csv") as f:
     exercises = list(csv.DictReader(f))
-names = {exercise["name"].lower().replace("-", " ") for exercise in exercises}
+names = {(exercise["name"].lower().replace("-", " "), exercise["muscle"]) for exercise in exercises}
 
 with open("../datasets/workouts/workouts.txt", "r") as f:
     workouts = f.read().split("\n\n")
@@ -25,6 +25,11 @@ for workout in workouts:
             exercise += entry[i]
             i += 1
         exercise = exercise.strip()
+
+        muscles = [e[1] for e in names if e[0] == exercise.lower()]
+        if len(muscles) != 1:
+            continue
+        muscle = muscles[0]
 
         lifts = []
         while i < len(entry):
@@ -53,7 +58,7 @@ for workout in workouts:
                 pass
 
         for sets, reps, weight in lifts:
-            data.append((date, exercise, sets, reps, weight))
+            data.append((date, exercise, muscle, sets, reps, weight))
         # print(date, description, time)
         # print(lifts)
     # print()
@@ -61,6 +66,7 @@ for workout in workouts:
 # with open('workouts.csv', 'w') as f:
 #     writer = csv.writer(f)
 #     writer.writerows(data)
+
 
 import pandas as pd
 import matplotlib
@@ -71,12 +77,12 @@ from matplotlib import rcParams
 rcParams.update({"figure.autolayout": True})
 sns.set(font_scale=1.5)
 
-df = pd.DataFrame(data, columns=["date", "exercise", "sets", "reps", "weight"])
-for exercise in df.groupby("exercise"):
+df = pd.DataFrame(data, columns=["date", "exercise", "muscle", "sets", "reps", "weight"])
+for muscle in df.groupby("muscle"):
     volumes = []
     maxes = []
     dates = []
-    for day in exercise[1].groupby("date"):
+    for day in muscle[1].groupby("date"):
         volume = 0
         max_ = 0
         for row in day[1].iterrows():
@@ -88,14 +94,10 @@ for exercise in df.groupby("exercise"):
         volumes.append(volume)
         dates.append(day[0])
 
-    if exercise[0] not in names:
-        print(f"exercise: {exercise[0]} not found")
-        continue
-
     if len(dates) > 5:
         dates = list(matplotlib.dates.date2num(dates))
         fig, axs = plt.subplots(2)
-        fig.suptitle(exercise[0].title())
+        fig.suptitle(muscle[0].title())
         axs[0].plot_date(dates, volumes, "b-")
         axs[0].set(ylabel="volume [kg]")
         axs[1].plot_date(dates, maxes, "r-")
