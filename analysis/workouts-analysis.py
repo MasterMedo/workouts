@@ -3,11 +3,11 @@ import csv
 from datetime import datetime
 
 
-with open("datasets/exercises/exercises.csv") as f:
+with open("../datasets/exercises/exercises.csv") as f:
     exercises = list(csv.DictReader(f))
 names = {exercise["name"].lower().replace("-", " ") for exercise in exercises}
 
-with open("workouts.txt", "r") as f:
+with open("../datasets/workouts/workouts.txt", "r") as f:
     workouts = f.read().split("\n\n")
 
 data = []
