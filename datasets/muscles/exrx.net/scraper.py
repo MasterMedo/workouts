@@ -25,8 +25,6 @@ headers = {
 
 params = (("undefined", ""),)
 
-bodyparts = []
-
 with open("data.txt") as f:
     html = f.read()
 
