@@ -10,13 +10,13 @@ bodyparts_filename = "bodyparts.csv"
 fieldnames_m = [
     "id",
     "name",
-    "muscle",
-    "equipment",
-    "description",
-    "benefits",
-    "instructions",
+    "segment",
+    "position",
 ]
-fieldnamems_bp = []
+fieldnamems_bp = [
+    "id",
+    "name",
+]
 
 headers = {
     "authority": "www.exrx.net",
@@ -25,8 +25,12 @@ headers = {
 
 params = (("undefined", ""),)
 
+bodyparts = []
 
-def scrape_muscles(writer: csv.DictWriter):
+with open("data.txt") as f:
+    html = f.read()
+
+def scrape_muscles(writer_bp: csv.DictWriter):
     """ """
     response = requests.get(
         f"https://www.exrx.net/Lists/Directory/",
@@ -34,14 +38,27 @@ def scrape_muscles(writer: csv.DictWriter):
         params=params,
     )
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(html, "html.parser")
     columns = soup.find_all("div", class_="col-sm-6")
 
     for col in columns:
-        for ul in col.find_all("ul", recursive=False):
-            for ul2 in ul.find_all("ul"):
-                print(ul2)
-                print()
+        col = col.find("ul")
+        for li in col.find_all("li", recursive=False):
+            bp = li.find("a").text.strip()
+            fields = {
+                "id": bp.lower().replace(" ", "-"),
+                "name": bp,
+            }
+            writer.writerow(fields)
+
+            prefix = ""
+            for li2 in li.find_all("li"):
+                a = li2.find("a", recursive=False)
+                if a is None:
+                    prefix = li2.text().split("<")[0]
 
 
-scrape_muscles(None)
+with open(bodyparts_filename, "w") as f:
+    writer_bp = csv.DictWriter(f, fieldnames=fieldnames_bp, lineterminator="\n")
+    writer_bp.writeheader()
+    scrape_muscles(writer_bp)
