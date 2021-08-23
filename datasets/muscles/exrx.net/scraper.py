@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 
 muscles_filename = "muscles.csv"
-bodyparts_filename = "bodyparts_tmp.csv"
+bodyparts_filename = "bodyparts.csv"
 fieldnames_m = [
     "id",
     "name",
