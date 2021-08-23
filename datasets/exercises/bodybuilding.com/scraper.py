@@ -14,6 +14,7 @@ fieldnames = [
     "description",
     "benefits",
     "instructions",
+    "rating",
 ]
 headers = {
     "authority": "www.bodybuilding.com",
@@ -54,6 +55,7 @@ def scrape_exercises(writer: csv.DictWriter):
                 "description": get_description(soup),
                 "benefits": get_benefits(soup),
                 "instructions": get_instructions(soup),
+                "rating": get_rating(result),
                 # "level": ,
                 # "images": ,
             }
@@ -121,6 +123,15 @@ def get_instructions(soup: BeautifulSoup) -> str:
         return ""
 
     return "\n".join(li.text.strip() for li in result.find_all("li"))
+
+
+def get_rating(soup: BeautifulSoup) -> str:
+    result = soup.find("div", class_="ExRating-badge")
+
+    try:
+        return float(result.text.strip())
+    except:
+        return 0.
 
 
 if not os.path.isfile(exercises_filename):
