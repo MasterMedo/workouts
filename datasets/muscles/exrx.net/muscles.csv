@@ -1,46 +1,46 @@
-id,name,segment,position
-sternocleidomastoid,Sternocleidomastoid,neck,front
-splenius,Splenius,neck,back
-anterior-deltoid,Anterior Deltoid,shoulders,front
-lateral-deltoid,Lateral Deltoid,shoulders,back
-posterior-deltoid,Posterior Deltoid,shoulders,back
-supraspinatus,Supraspinatus,shoulders,back
-triceps-brachii,Triceps Brachii,upper-arms,back
-biceps-brachii,Biceps Brachii,upper-arms,front
-brachialis,Brachialis,upper-arms,front
-brachioradialis,Brachioradialis,forearms,front
-wrist-flexors,Wrist Flexors,forearms,front
-wrist-extensors,Wrist Extensors,forearms,back
-pronators,Pronators,forearms,front
-supinators,Supinators,forearms,front
-back,Back,back,back
-latissimus-dorsi,Latissimus Dorsi,back,back
-teres-major,Teres Major,back,back
-trapezius-upper-fibers,Trapezius Upper Fibers,back,back
-levator-scapulae,Levator Scapulae,back,back
-trapezius-middle-fibers,Trapezius Middle Fibers,back,back
-trapezius-lower-fibers,Trapezius Lower Fibers,back,back
-rhomboids,Rhomboids,back,back
-infraspinatus,Infraspinatus,back,back
-teres-minor,Teres Minor,back,back
-subscapularis,Subscapularis,back,back
-pectoralis-major-sternal,Pectoralis Major Sternal,chest,front
-pectoralis-major-clavicular,Pectoralis Major Clavicular,chest,front
-pectoralis-minor,Pectoralis Minor,chest,front
-serratus-anterior,Serratus Anterior,chest,front
-rectus-abdominis,Rectus Abdominis,waist,front
-transverse-abdominis,Transverse Abdominis,waist,front
-obliques,Obliques,waist,front
-quadratus-lumborum,Quadratus Lumborum,waist,front
-erector-spinae,Erector Spinae,waist,back
-gluteus-maximus,Gluteus Maximus,hips,front
-hip-abductors,Hip Abductors,hips,front
-hip-flexors,Hip Flexors,hips,front
-deep-hip-external-rotators,Deep Hip External Rotators,hips,front
-quadriceps,Quadriceps,thigh,front
-hamstrings,Hamstrings,thigh,back
-hip-adductors,Hip Adductors,thigh,front
-gastrocnemius,Gastrocnemius,calves,back
-soleus,Soleus,calves,back
-tibialis-anterior,Tibialis Anterior,calves,front
-popliteus,Popliteus,calves,back
+id,name,part,position,segment
+sternocleidomastoid,Sternocleidomastoid,neck,front,head
+splenius,Splenius,neck,back,neck
+anterior-deltoid,Anterior Deltoid,shoulders,front,thorax
+lateral-deltoid,Lateral Deltoid,shoulders,back,thorax
+posterior-deltoid,Posterior Deltoid,shoulders,back,thorax
+supraspinatus,Supraspinatus,shoulders,back,thorax
+triceps-brachii,Triceps Brachii,upper-arms,back,upper-arm
+biceps-brachii,Biceps Brachii,upper-arms,front,upper-arm
+brachialis,Brachialis,upper-arms,front,upper-arm
+brachioradialis,Brachioradialis,forearms,front,forearm
+wrist-flexors,Wrist Flexors,forearms,front,forearm
+wrist-extensors,Wrist Extensors,forearms,back,forearm
+pronators,Pronators,forearms,front,forearm
+supinators,Supinators,forearms,front,forearm
+back,Back,back,back,thorax
+latissimus-dorsi,Latissimus Dorsi,back,back,thorax
+teres-major,Teres Major,back,back,thorax
+trapezius-upper-fibers,Trapezius Upper Fibers,back,back,thorax
+levator-scapulae,Levator Scapulae,back,back,thorax
+trapezius-middle-fibers,Trapezius Middle Fibers,back,back,thorax
+trapezius-lower-fibers,Trapezius Lower Fibers,back,back,thorax
+rhomboids,Rhomboids,back,back,thorax
+infraspinatus,Infraspinatus,back,back,thorax
+teres-minor,Teres Minor,back,back,thorax
+subscapularis,Subscapularis,back,back,thorax
+pectoralis-major-sternal,Pectoralis Major Sternal,chest,front,thorax
+pectoralis-major-clavicular,Pectoralis Major Clavicular,chest,front,thorax
+pectoralis-minor,Pectoralis Minor,chest,front,thorax
+serratus-anterior,Serratus Anterior,chest,front,thorax
+rectus-abdominis,Rectus Abdominis,waist,front,abdomen
+transverse-abdominis,Transverse Abdominis,waist,front,abdomen
+obliques,Obliques,waist,front,abdomen
+quadratus-lumborum,Quadratus Lumborum,waist,front,abdomen
+erector-spinae,Erector Spinae,waist,back,abdomen
+gluteus-maximus,Gluteus Maximus,hips,front,pelvis
+hip-abductors,Hip Abductors,hips,front,pelvis
+hip-flexors,Hip Flexors,hips,front,pelvis
+deep-hip-external-rotators,Deep Hip External Rotators,hips,front,pelvis
+quadriceps,Quadriceps,thigh,front,thigh
+hamstrings,Hamstrings,thigh,back,thigh
+hip-adductors,Hip Adductors,thigh,front,thigh
+gastrocnemius,Gastrocnemius,calves,back,leg
+soleus,Soleus,calves,back,leg
+tibialis-anterior,Tibialis Anterior,calves,front,leg
+popliteus,Popliteus,calves,back,leg
