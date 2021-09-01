@@ -1,4 +1,4 @@
-id,name,body part,male weight,female weight,average weight,male cog, female cog, average cog,male length, female length, average length
+id,name,body part,male weight,female weight,average weight,male cog,female cog,average cog,male length,female length,average length
 head,head,head,0.0826,0.0820,0.0823,0.55,0.55,0.55,0.1075,0.1075,0.1075
 thorax,thorax,trunk,0.201,0.17,0.1856,0.567,0.563,0.565,0.127,0.127,0.127
 abdomen,abdomen,trunk,0.131,0.122,0.1265,0.46,0.46,0.46,0.081,0.081,0.081
