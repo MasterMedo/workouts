@@ -1,47 +1,39 @@
-import os
 import csv
-import requests
 
 from bs4 import BeautifulSoup
 
 
-muscles_filename = "muscles.csv"
-bodyparts_filename = "bodyparts.csv"
 fieldnames_m = [
     "id",
     "name",
-    "muscle",
-    "equipment",
-    "description",
-    "benefits",
-    "instructions",
+    "segment",
+    "position",
 ]
-fieldnamems_bp = []
+fieldnames_bp = [
+    "id",
+    "name",
+]
 
-headers = {
-    "authority": "www.exrx.net",
-    "x-requested-with": "XMLHttpRequest",
-}
-
-params = (("undefined", ""),)
+with open("data.txt") as f:
+    html = f.read()
 
 
-def scrape_muscles(writer: csv.DictWriter):
-    """ """
-    response = requests.get(
-        f"https://www.exrx.net/Lists/Directory/",
-        headers=headers,
-        params=params,
-    )
-
-    soup = BeautifulSoup(response.text, "html.parser")
+def scrape_muscles(writer_bp: csv.DictWriter):
+    soup = BeautifulSoup(html, "html.parser")
     columns = soup.find_all("div", class_="col-sm-6")
 
     for col in columns:
-        for ul in col.find_all("ul", recursive=False):
-            for ul2 in ul.find_all("ul"):
-                print(ul2)
-                print()
+        col = col.find("ul")
+        for li in col.find_all("li", recursive=False):
+            body_part = li.find("a").text.strip()
+            fields = {
+                "id": body_part.lower().replace(" ", "-"),
+                "name": body_part,
+            }
+            writer_bp.writerow(fields)
 
 
-scrape_muscles(None)
+with open("bodyparts.csv", "w") as f:
+    writer_bp = csv.DictWriter(f, fieldnames=fieldnames_bp, lineterminator="\n")
+    writer_bp.writeheader()
+    scrape_muscles(writer_bp)
