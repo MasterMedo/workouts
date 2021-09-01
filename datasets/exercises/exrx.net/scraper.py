@@ -13,8 +13,6 @@ fieldnames = [
     "force",
     # "utility",
     # "mechanics",
-    "agonist",
-    "antagonist",
     "target",
     "synergist",
     "stabilizer",
