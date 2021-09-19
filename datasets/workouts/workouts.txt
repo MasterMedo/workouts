@@ -505,13 +505,13 @@
 
 26.8. legs 20:30
   barbell squat 20 40 60 70 70 1x8
-  abductors 66 4x12
-  adductors 45 4x10
-  seated calf raises 40 4x12
+  thigh abductor 66 4x12
+  thigh adductor 45 4x10
+  seated calf raise 40 4x12
   leg extensions 60 4x12
-  back extensions 2x12
-  ghd situps 2x12
-  split 30 3x12
+  back extension 2x12
+  ghd sit up 2x12
+  dumbbell lunges 30 3x12
 
 30.8. push 20:30
   barbell bench press wide grip 50 4x10
@@ -522,59 +522,59 @@
 2.9. pull 20:30
   dead lift 60 80 80 80
   pullups 4x10
-  rows 45 4x10
-  lat pulldown 45 4x10
-  biceps curls 12.5 4x10
+  seated cable rows 45 4x10
+  lat pull down 45 4x10
+  dumbbell bicep curl 12.5 4x10
 
 5.9. legs 20:30
   barbell squat 60 2x10 80 3x10
   barbell hip thrust 110 1x10 130 3x10
-  seated calf raises 40 3x10
-  ghd situps 3x10
-  adductors 45 2x10
-  abductors 45 2x10
+  seated calf raise 40 3x10
+  ghd sit up 3x10
+  thigh adductor 45 2x10
+  thigh abductor 45 2x10
 
 6.9. legs 11:00
   run 5km 30min
 
 7.9. Push 20:30
   barbell bench press wide grip 40 1x10 50 3x10
-  dip 15 4x8
+  chest dip 15 4x8
   back extension 2x10
-  ghd sit-up 2x10
-  dumbbell over head press 10 2x10
+  ghd sit up 2x10
+  seated dumbbell shoulder press 10 2x10
 
 8.9. Legs 20:00
-  squat 60 4x10
-  hip thrust 110 4x10
-  abductors 41 4x10
-  adductors 59 66 2x12
-  seated calf raises 40 3x10
+  barbell squat 60 4x10
+  barbell hip thrust 110 4x10
+  thigh abductor 41 4x10
+  thigh adductor 59 66 2x12
+  seated calf raise 40 3x10
 
 13.9. Pull 20:30
-  deadlift 60 70 80 90 1x8
-  cable row 45 4x10
-  lat pulldown 45 4x10
+  barbell deadlift 60 70 80 90 1x8
+  seated cable rows 45 4x10
+  lat pull down 45 4x10
   pullups 4x10
 
 14.9. Push 20:30
   barbell bench press wide grip 50 4x10 55 1x8
-  dip 20 3x6 15 2x8
-  cable fly 14 4x10
-  triceps extension 11.3 4x10
+  chest dip 20 3x6 15 2x8
+  high to low cable chest fly 14 4x10
+  triceps pushdown 11.3 4x10
 
 16.9. Pull 11:00
   pullups 3x10
   dumbbell deadlift 30 4x10
-  bicep curl 10 4x10
-  dumbbell row 20 4x10
+  dumbbell bicep curl 10 4x10
+  dumbbell bent over row 20 4x10
 
 18.9. Legs 21:00
-  squat 60 4x10 70 1x10
-  hip thrust 110 1x12 120 3x12
-  abductors 45 4x10
-  adductors 52 59 66 66 1x12
-  seated calf raises 40 50 2x10
+  barbell squat 60 4x10 70 1x10
+  barbell hip thrust 110 1x12 120 3x12
+  thigh abductor 45 4x10
+  thigh adductor 52 59 66 66 1x12
+  seated calf raise 40 50 2x10
 
 19.9. Legs 10:00
   run 5km 30min
