@@ -508,7 +508,7 @@
   thigh abductor 66 4x12
   thigh adductor 45 4x10
   seated calf raise 40 4x12
-  leg extensions 60 4x12
+  leg extension 60 4x12
   back extension 2x12
   ghd sit up 2x12
   dumbbell lunges 30 3x12
@@ -578,3 +578,12 @@
 
 19.9. Legs 10:00
   run 5km 30min
+
+20.9. Pull 19:30
+  pullups 4x10
+  chin up 10 2x6 0 2x10
+  seated cable rows 52 2x6 45 2x10
+  lat pulldown 52 2x6 45 2x10
+  dumbbell bicep curl 12.5 4x10
+  barbell deadlift 60 4x10
+  ghd sit up 3x10
