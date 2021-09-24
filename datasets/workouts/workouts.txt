@@ -587,3 +587,11 @@
   dumbbell bicep curl 12.5 4x10
   barbell deadlift 60 4x10
   ghd sit up 3x10
+
+22.9. Push 20:45
+  barbell bench press wide grip 40 50 55 40 4x10
+  deadlift 60 2x10
+  squat 60 2x10
+  dip 20 4x8
+  dumbbell fly 12.5 4x10
+  butterfly 54 64 64 1x10
