@@ -93,15 +93,16 @@ for exercise in df.groupby("exercise"):
         continue
 
     if len(dates) > 5:
+        ...
         # print('common: ' + exercise[0].title())
-        dates = list(matplotlib.dates.date2num(dates))
-        fig, axs = plt.subplots(2)
-        fig.suptitle(exercise[0].title())
-        axs[0].plot_date(dates, volumes, "b-")
-        axs[0].set(ylabel="volume [kg]")
-        axs[1].plot_date(dates, maxes, "r-")
-        axs[1].set(ylabel="max [kg]")
-        fig.autofmt_xdate()
-        plt.show()
-    # else:
-    #     print('rare: ' + exercise[0].title())
+        # dates = list(matplotlib.dates.date2num(dates))
+        # fig, axs = plt.subplots(2)
+        # fig.suptitle(exercise[0].title())
+        # axs[0].plot_date(dates, volumes, "b-")
+        # axs[0].set(ylabel="volume [kg]")
+        # axs[1].plot_date(dates, maxes, "r-")
+        # axs[1].set(ylabel="max [kg]")
+        # fig.autofmt_xdate()
+        # plt.show()
+    else:
+        print('rare: ' + exercise[0].title())

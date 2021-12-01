@@ -595,3 +595,47 @@
   dip 20 4x8
   dumbbell fly 12.5 4x10
   butterfly 54 64 64 1x10
+
+29.9. pull 8:00
+  run 7km
+  row 50 4x12
+  wide extended row 8 4x12
+  straight line arm raises 4 4x10
+  bicep curls 10 2x10
+
+16.10. legs 20:30
+  leg press 127 3x10 140 1x10
+  prone leg curl 40 4x10
+  adductor 59 4x10
+  abductor 12 4x10
+  seated calf raise 40 4x10
+
+18.10. push 20:30
+  bench 40 1x12 50 3x10
+  dip 15 2x8 0 2x12
+  incline dumbbell fly 10 4x10
+  california press 20 4x8
+  fly 44 4x10
+
+20.10. legs 20:30
+  leg press 127 143 179 179 1x12
+  adductor 52 59 66 66 1x10
+  abductor 32 4x10
+  leg extension 60 4x10
+  seated calf raise 40 4x10
+  squat 40 4x8
+  dead lift 40 3x8
+
+21.10. pull 20:30
+  pull up 4x8
+  seated cable row 39 4x10
+  back delt 44 4x10
+  bicep curl 10 4x10
+  lat pulldown 39 4x10
+
+23.10. push 20:30
+  bench 20 40 50 55 60 40 1x10
+  dip 20 10 2x10
+  over head press 20 4x10
+  california press 20 4x10
+  fly 52 4x10
