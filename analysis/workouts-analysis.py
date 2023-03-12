@@ -15,7 +15,7 @@ for workout in workouts:
     workout = iter(workout.split("\n"))
     date, *description, time = next(workout).split()
     description = " ".join(description)
-    date = datetime.strptime(date + "2021.", "%d.%m.%Y.")
+    date = datetime.strptime(date, "%d.%m.%Y.")
 
     for entry in workout:
         i = 0
