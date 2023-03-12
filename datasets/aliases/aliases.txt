@@ -6,3 +6,7 @@ lat pulldown,lat pull down
 cable pulldown,close grip lat pulldown
 squat,barbell full squat
 triceps cable push away,cable overhead triceps extension
+clean,power clean
+front squat,barbell front squat
+row,bent over barbell row
+upright row,barbell upright row
