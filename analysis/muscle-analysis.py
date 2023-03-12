@@ -5,7 +5,10 @@ from datetime import datetime
 
 with open("../datasets/exercises/bodybuilding.com/exercises.csv") as f:
     exercises = list(csv.DictReader(f))
-names = {(exercise["name"].lower().replace("-", " "), exercise["muscle"]) for exercise in exercises}
+names = {
+    (exercise["name"].lower().replace("-", " "), exercise["muscle"])
+    for exercise in exercises
+}
 
 with open("../datasets/workouts/workouts.txt", "r") as f:
     workouts = f.read().split("\n\n")
@@ -15,7 +18,7 @@ for workout in workouts:
     workout = iter(workout.split("\n"))
     date, *description, time = next(workout).split()
     description = " ".join(description)
-    date = datetime.strptime(date + "2021.", "%d.%m.%Y.")
+    date = datetime.strptime(date, "%d.%m.%Y.")
 
     for entry in workout:
         i = 0
@@ -77,7 +80,9 @@ from matplotlib import rcParams
 rcParams.update({"figure.autolayout": True})
 sns.set(font_scale=1.5)
 
-df = pd.DataFrame(data, columns=["date", "exercise", "muscle", "sets", "reps", "weight"])
+df = pd.DataFrame(
+    data, columns=["date", "exercise", "muscle", "sets", "reps", "weight"]
+)
 for muscle in df.groupby("muscle"):
     volumes = []
     maxes = []

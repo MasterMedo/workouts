@@ -1,13 +1,29 @@
 import csv
+import os
 
 from datetime import datetime
 
+FILE_DIR = os.path.dirname(__file__)
+EXERCISES_PATH = os.path.join(
+    FILE_DIR, "../datasets/exercises/bodybuilding.com/exercises.csv"
+)
+WORKOUTS_PATH = os.path.join(FILE_DIR, "../datasets/workouts/workouts.txt")
+ALIASES_PATH = os.path.join(FILE_DIR, "../datasets/aliases/aliases.txt")
 
-with open("../datasets/exercises/bodybuilding.com/exercises.csv") as f:
-    exercises = list(csv.DictReader(f))
-names = {exercise["name"].lower().replace("-", " ") for exercise in exercises}
 
-with open("../datasets/workouts/workouts.txt", "r") as f:
+def parse_exercise_name(exercise_name):
+    return exercise_name.lower().replace("-", " ")
+
+
+with open(EXERCISES_PATH) as f:
+    exercises = {
+        parse_exercise_name(exercise["name"]) for exercise in csv.DictReader(f)
+    }
+
+with open(ALIASES_PATH) as f:
+    aliases = {alias["alias"]: alias["exercise"] for alias in csv.DictReader(f)}
+
+with open(WORKOUTS_PATH, "r") as f:
     workouts = f.read().split("\n\n")
 
 data = []
@@ -20,11 +36,15 @@ for workout in workouts:
     for entry in workout:
         i = 0
 
-        exercise = ""
+        exercise_name = ""
         while i < len(entry) and (entry[i].isalpha() or entry[i].isspace()):
-            exercise += entry[i]
+            exercise_name += entry[i]
             i += 1
-        exercise = exercise.strip()
+
+        exercise_name = exercise_name.strip()
+        if exercise_name not in exercises:
+            if exercise_name in aliases:
+                exercise_name = aliases[exercise_name]
 
         lifts = []
         while i < len(entry):
@@ -49,11 +69,11 @@ for workout in workouts:
                 else:
                     lifts.append((sets, reps, 0))
             except Exception:
-                # print(date, exercise, e)
+                # print(date, exercise_name, e)
                 pass
 
         for sets, reps, weight in lifts:
-            data.append((date, exercise, sets, reps, weight))
+            data.append((date, exercise_name, sets, reps, weight))
         # print(date, description, time)
         # print(lifts)
     # print()
@@ -88,8 +108,8 @@ for exercise in df.groupby("exercise"):
         volumes.append(volume)
         dates.append(day[0])
 
-    if exercise[0] not in names:
-        print(f"exercise: {exercise[0]} not found")
+    if exercise[0] not in exercises:
+        print(f"exercise: '{exercise[0]}' not found")
         continue
 
     if len(dates) > 5:
