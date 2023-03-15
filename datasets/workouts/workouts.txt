@@ -604,3 +604,17 @@
   deadlift 27.5 10x10
   clean 27.5 4x8
   font squat 27.5 4x10
+
+13.3.2023 chest 14:30
+  dumbbell press 16 1x12 22 3x10
+  dip 14 4x12
+  incline press 30 4x12
+  overhead press 20 4x10
+
+14.3.2023 legs 14:00
+  squat 50 4x10
+  deadlift 50 40 2x10
+  hip thrust 40 4x12
+  dumbbell bench lunge 16 1x5 16 1x7 16 2x10
+  leg press 82 4x12
+  single leg calf raises 4x12
