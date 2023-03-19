@@ -57,6 +57,8 @@ for workout in workouts:
                     raise RuntimeError(
                         f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps or duration of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
                     )
+                # TODO(mastermedo): add a new database file for enriching exercise data with the field is_bodyweight
+                # TODO(mastermedo): if the weight is <= 0; check if the current exercise is a bodyweight exercise. If it is; add the bodyweight to the weight, if it's not; throw an error, if it's not defined yet; throw an error to add it to the data enriching
                 last_weight = float(token)
             # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
             # duration e.g. ::5 or 1:34:45 or :189:
