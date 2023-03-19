@@ -607,7 +607,7 @@
 
 13.3.2023. chest 14:30
   dumbbell bench press 16 1x12 22 3x10
-  dip 14 4x12
+  dip -14 4x12
   incline bench press 30 4x12
   overhead barbell press 20 4x10
 

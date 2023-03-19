@@ -1,10 +1,14 @@
 import csv
 import os
 import re
-import string
+import matplotlib.pyplot as plt
 
-from functools import partial
-from datetime import datetime
+from datetime import datetime, timedelta
+from matplotlib import rcParams
+
+import pandas as pd
+import matplotlib
+import seaborn as sns
 
 FILE_DIR = os.path.dirname(__file__)
 EXERCISES_PATH = os.path.join(
@@ -29,7 +33,7 @@ with open(ALIASES_PATH) as f:
 with open(WORKOUTS_PATH, "r") as f:
     workouts = f.read().split("\n\n")
 
-data = []
+workouts_sets_and_reps = []
 for workout in workouts:
     workout = iter(workout.split("\n"))
     date, *description, time = next(workout).split()
@@ -87,29 +91,23 @@ for workout in workouts:
             exercise_name = aliases[exercise_name]
 
         for sets, reps, weight in sets_and_reps:
-            data.append((date, exercise_name, sets, reps, weight))
+            workouts_sets_and_reps.append((date, exercise_name, sets, reps, weight))
 
         # TODO(mastermedo): implement tracking durations
         for duration, weight in durations:
             pass
-        # print(date, description, time)
-        # print(lifts)
-    # print()
 
-# with open('workouts.csv', 'w') as f:
+# with open("workouts.csv", "w") as f:
 #     writer = csv.writer(f)
-#     writer.writerows(data)
+#     writer.writerows(workouts_sets_and_reps)
 
-import pandas as pd
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn as sns
-from matplotlib import rcParams
 
 rcParams.update({"figure.autolayout": True})
 sns.set(font_scale=1.5)
 
-df = pd.DataFrame(data, columns=["date", "exercise", "sets", "reps", "weight"])
+df = pd.DataFrame(
+    workouts_sets_and_reps, columns=["date", "exercise", "sets", "reps", "weight"]
+)
 for exercise in df.groupby("exercise"):
     volumes = []
     maxes = []
@@ -130,7 +128,7 @@ for exercise in df.groupby("exercise"):
         print(f"exercise: '{exercise[0]}' not found")
         continue
 
-    if len(dates) > 5:
+    if len(dates) > 5 and dates[-1] > datetime.now() - timedelta(weeks=12):
         # print('common: ' + exercise[0].title())
         dates = list(matplotlib.dates.date2num(dates))
         fig, axs = plt.subplots(2)
