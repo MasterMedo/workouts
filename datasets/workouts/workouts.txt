@@ -7,7 +7,7 @@
   thigh adductor 27 4x12
   thigh abductor 32 4x12
   leg extension 30 4x12
-  single leg cable hip extension 24 4x12
+  standing hip extension 24 4x12
 
 27.5.2021. push 21:00
   barbell bench press wide grip 42.5 5x10
@@ -19,11 +19,11 @@
   butterfly 44 4x8
 
 28.5.2021. pull 16:00
-  pullups 4x10
+  pull up 4x10
   chin up 4x10
-  seated cable rows 17.5 4x8
+  seated cable row 17.5 4x8
   dumbbell bent over row 17.5 4x8
-  reverse machine flyes 5 4x10
+  reverse machine flye 5 4x10
   dumbbell bicep curl 10 4x10
 
 29.5.2021. legs 10:00
@@ -33,9 +33,9 @@
   barbell squat 2x30
 
 30.5.2021. push 10:00
-  pushups 4x12
+  push up 4x12
   diamond push up 4x12
-  dumbbell flyes 10 4x12
+  dumbbell flye 10 4x12
   dumbbell bench press 10 4x12
 
 31.5.2021. legs 16:00
@@ -48,10 +48,10 @@
   leg extension 35 3x12
   lying leg curl 35 4x12
   lat pull down 45 4x12
-  seated cable rows 45 2x12
+  seated cable row 45 2x12
 
 1.6.2021. push 18:30
-  pullups 4x6
+  pull up 4x6
   bench dip 4x12
   barbell bench press wide grip 50 2x6 40 2x10
   incline bench press 37.5 2x6 32.5 2x6
@@ -61,12 +61,12 @@
   triceps pushdown 23 2x8 18 2x10
 
 2.6.2021. pull 19:00
-  pullups 4x8
-  seated cable rows 39 4x10
+  pull up 4x8
+  seated cable row 39 4x10
   chin up 4x8
   standing dumbbell shrug 15 4x12
   machine low row 20 4x10
-  seated cable rows 18 2x10
+  seated cable row 18 2x10
   dumbbell bicep curl 10 4x10
   standing face pull 18 4x10
 
@@ -82,17 +82,17 @@
   bench dip 4x12
 
 5.6.2021. pull 15:00
-  pullups 4x8
-  seated cable rows 39 4x10
+  pull up 4x8
+  seated cable row 39 4x10
   lat pull down 32 4x12
   machine low row 20 4x12
-  reverse machine flyes 25 4x10
+  reverse machine flye 25 4x10
   barbell front raise 18 4x12
   standing face pull 23 4x10
   chin up 4x6
   dumbbell bicep curl 10 4x10
   back extension 4x12
-  single leg standing dumbbell calf raise 4x12
+  one leg calf raise 4x12
 
 6.6.2021. legs 21:30
   leg press 127 4x12
@@ -102,7 +102,7 @@
   seated calf raise 40 4x10
   thigh adductor 36 4x12
   thigh abductor 39 4x12
-  single leg cable hip extension 29 4x12
+  one leg cable hip extension 29 4x12
   leg extension 40 4x10
 
 7.6.2021. push 21:30
@@ -111,8 +111,8 @@
   chest dip 3x12
 
 8.6.2021. pull 21:45
-  pullups 4x8
-  seated cable rows 45 4x8
+  pull up 4x8
+  seated cable row 45 4x8
   lat pull down 39 4x8
   chin up 4x8
 
@@ -132,7 +132,7 @@
   butterfly 49 4x12
 
 11.6.2021. pull 13:30
-  seated cable rows 45 4x10
+  seated cable row 45 4x10
   lat pull down 45 4x10
   chin up 4x10
   dumbbell bicep curl 7.5 4x12
@@ -141,7 +141,7 @@
 12.6.2021. legs 21:30
   leg press 45 66 93 141 155 1x12 175 1x10
   barbell deadlift 40 50 60 1x12 70 80 1x10
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   thigh adductor 23 1x12 32 1x12 41 1x12 52 1x10
   thigh abductor 32 1x12 45 1x12 52 1x12 39 1x12
 
@@ -154,13 +154,13 @@
 
 14.6.2021. pull 17:30
   barbell deadlift bent row complex 20 30 40 50 1x12
-  seated cable rows 45 5x10
+  seated cable row 45 5x10
   lat pull down 39 1x10 45 3x10
   standing face pull 23 27 32 36 1x12
   chin up 4x12
 
 15.6.2021. legs 16:05
-  pushups 4x12
+  push up 4x12
   leg press 39 59 100 141 155 175 182 1x12
   barbell squat 30 40 50 60 1x10 70 1x8
   barbell deadlift 50 60 70 80 1x10
@@ -172,7 +172,7 @@
   back extension 4x12
 
 16.6.2021. push 20:30
-  pushups 4x12
+  push up 4x12
   incline bench press 20 1x10
   barbell bench press wide grip 40 9x10
   chest dip 8x10
@@ -180,14 +180,14 @@
   butterfly 49 8x10
 
 17.6.2021. pull 15:30
-  seated cable rows 45 4x10
+  seated cable row 45 4x10
   lat pull down 45 4x10
-  seated cable rows 50 4x10
-  reverse machine flyes 39 4x8
+  seated cable row 50 4x10
+  reverse machine flye 39 4x8
   chin up 4x10
   standing dumbbell shrug 20 4x12
   dumbbell bicep curl 10 4x12
-  pullups 4x8
+  pull up 4x8
 
 18.6.2021. legs 17:15
   leg press 59 80 100 120 1x12
@@ -200,7 +200,7 @@
   lying leg curl 50 4x12
 
 19.6.2021. push 19:30
-  pushups 2x12
+  push up 2x12
   barbell bench press wide grip 60 1x4 50 1x12 40 8x10
   incline bench press 20 2x10 40 1x10 30 8x10
   chest dip 5x12
@@ -208,10 +208,10 @@
   high to low cable chest fly 4.5 9 14 18 1x12
 
 20.6.2021. pull 17:30
-  pullups 3x8
-  seated cable rows 52 3x10 25 5x12
+  pull up 3x8
+  seated cable row 52 3x10 25 5x12
   lat pull down 39 5x10
-  reverse machine flyes 24 5x12
+  reverse machine flye 24 5x12
   dumbbell bicep curl 12.5 5x10
 
 21.6.2021. legs 20:30
@@ -224,15 +224,15 @@
   lying leg curl 45 4x12
 
 22.6.2021. rest 10:00
-  pullups 4x12
+  pull up 4x12
 
 23.6.2021. pull 20:00
   barbell deadlift bent row complex 20 30 40 50 60 50 1x12
   barbell deadlift 60 1x12 70 5x8
   machine low row 30 35 40 45 45 1x8
-  reverse machine flyes 29 34 39 39 24 1x10
+  reverse machine flye 29 34 39 39 24 1x10
   lat pull down 45 52 52 45 1x10
-  pullups 4x10
+  pull up 4x10
   dumbbell bicep curl 10 4x10
 
 24.6.2021. push and legs 17:00
@@ -247,9 +247,9 @@
 
 25.6.2021. pull 20:15
   barbell deadlift 30 40 50 60 70 80 90 1x12 100 1x3
-  seated cable rows 32 45 52 59 1x10 66 1x6
+  seated cable row 32 45 52 59 1x10 66 1x6
   lat pull down 39 45 52 52 1x12
-  reverse machine flyes 34 39 45 49 1x10
+  reverse machine flye 34 39 45 49 1x10
 
 26.6.2021. push 20:30
   barbell bench press wide grip 20 30 40 50 1x12 40 1x10
@@ -271,11 +271,11 @@
   leg extension 55 4x10
 
 28.6.2021. pull 20:45
-  seated cable rows 45 4x12
+  seated cable row 45 4x12
   machine bicep curl 45 4x6
   barbell deadlift 40 50 60 70 90 1x10
   lat pull down 45 1x12 52 3x10
-  reverse machine flyes 44 4x10
+  reverse machine flye 44 4x10
   side lateral raise 5 4x10
 
 29.6.2021. push 20:00
@@ -297,11 +297,11 @@
 
 2.7.2021. pull 21:00
   barbell deadlift 60 80 90 100 1x10
-  seated cable rows 45 52 45 45 1x12
+  seated cable row 45 52 45 45 1x12
   lat pull down 45 54 45 45 1x10
   straight arm pulldown 39 4x12
   ghd sit up 4x12
-  pullups 3x6
+  pull up 3x6
 
 3.7.2021. push 21:15
   barbell bench press wide grip 20 40 50 50 50 1x10
@@ -330,7 +330,7 @@
 
 9.7.2021. pull 21:00
   barbell deadlift 60 80 100 110 1x8
-  seated cable rows 52 1x12 45 1x12
+  seated cable row 52 1x12 45 1x12
   lat pull down 45 4x12
   dumbbell bicep curl 12.5 4x12
 
@@ -346,16 +346,16 @@
   incline bench press 20 40 2x10
   chest dip 0 0 5 10 1x12
   high to low cable chest fly 9 14 2x10
-  dumbbell flyes 15 4x10
+  dumbbell flye 15 4x10
   triceps pushdown 14 4x12
 
 15.7.2021. pull 20:20
   barbell deadlift 100 3x8 110 1x6
-  seated cable rows 45 2x12
+  seated cable row 45 2x12
   lat pull down 45 4x12
   dumbbell bent over row 20 2x12
   ghd sit up 4x12
-  pullups 4x8
+  pull up 4x8
   dumbbell bicep curl 15 3x8 12 1x8
 
 17.7.2021. legs 20:30
@@ -365,22 +365,22 @@
   thigh abductor 45 39 2x12
   thigh adductor 59 66 73 79 1x12
   leg extension 65 70 2x12
-  single leg standing dumbbell calf raise 4x16
+  one leg calf raise 4x16
 
 19.7.2021. push 19:00
   barbell bench press wide grip 40 4x10 50 1x8
   incline bench press 30 4x10
   chest dip 10 5 2x10
   high to low cable chest fly 14 4x10
-  dumbbell flyes 17.5 4x6
+  dumbbell flye 17.5 4x6
   triceps pushdown 14 4x10
   standing face pull 30 4x12
 
 21.7.2021. pull 20:30
   barbell deadlift 60 4x10
-  seated cable rows 32 4x12
+  seated cable row 32 4x12
   lat pull down 45 4x10
-  pullups 2x10 2x6
+  pull up 2x10 2x6
   dumbbell bicep curl 12.5 4x10
 
 23.7.2021. legs 20:45
@@ -398,20 +398,20 @@
   standing bent over one arm dumbbell triceps extension 25 4x12
 
 25.7.2021. push 20:20
-  pushups 5x10
+  push up 5x10
   chest dip 5x10
   decline push up 5x10
 
 27.7.2021. pull 15:00
-  barbell deadlift 30
+  barbell deadlift 30 4x12
   standing bent over one arm dumbbell triceps extension 25 4x12
   dumbbell bent over row 15 4x12
   swim 30min 2km
 
 29.7.2021. legs 15:00
-  dumbbell lunges 30 4x12
+  dumbbell lunge 30 4x12
   barbell squat 4x12
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   swim 30min 2km
 
 31.7.2021. push 20:00
@@ -424,17 +424,17 @@
   back extension 2x12
 
 1.8.2021. legs 8:00
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell squat 4x12
 
 2.8.2021. pull 15:00
   barbell deadlift 30 4x12
-  pullups 3x12
-  single leg standing dumbbell calf raise 4x20
+  pull up 3x12
+  one leg calf raise 4x20
   barbell squat 4x12
 
 3.8.2021. legs 8:00
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell squat 4x12
 
 4.8.2021. legs 21:00
@@ -443,24 +443,24 @@
   thigh abductor 45 4x12
   thigh adductor 59 66 73 79 1x12
   lying leg curl 45 4x12
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell squat 4x12
 
 5.8.2021. legs 8:00
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell squat 4x12
 
 6.8.2021. push 10:00
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell squat 4x12
-  dumbbell flyes 15 4x12
-  pushups 4x12
+  dumbbell flye 15 4x12
+  push up 4x12
   seated dumbbell shoulder press 10 4x12
   chest dip 4x12
   bench dip 4x12
 
 8.8.2021. pull 19:00
-  single leg standing dumbbell calf raise 4x20
+  one leg calf raise 4x20
   barbell deadlift 30 4x12
   standing bent over one arm dumbbell triceps extension 25 4x12
   bent over plate rear delt raise 7.5 4x12
@@ -468,13 +468,13 @@
 
 10.8.2021. legs 16:00
   barbell squat 30 4x12
-  single leg standing dumbbell calf raise 10 4x20
-  dumbbell lunges 30 4x12
+  one leg calf raise 10 4x20
+  dumbbell lunge 30 4x12
   thigh adductor 40 4x12
 
 12.8.2021. pull 21:00
   barbell deadlift 30 4x12
-  pullups 4x10
+  pull up 4x10
   dumbbell bicep curl 15 4x10
   bent over plate rear delt raise 5 4x12
 
@@ -486,9 +486,9 @@
 
 16.8.2021. pull 20:30
   barbell deadlift 60 4x12
-  pullups 4x10
+  pull up 4x10
   dumbbell bicep curl 12.5 4x12
-  seated cable rows 45 4x12
+  seated cable row 45 4x12
 
 18.8.2021. legs 6:30
   hiking 42km 9h
@@ -511,7 +511,7 @@
   leg extension 60 4x12
   back extension 2x12
   ghd sit up 2x12
-  dumbbell lunges 30 3x12
+  dumbbell lunge 30 3x12
 
 30.8.2021. push 20:30
   barbell bench press wide grip 50 4x10
@@ -520,9 +520,9 @@
   triceps pushdown 11.3 4x10
 
 2.9.2021. pull 20:30
-  dead lift 60 80 80 80
-  pullups 4x10
-  seated cable rows 45 4x10
+  deadlift 60 80 80 80 x10
+  pull up 4x10
+  seated cable row 45 4x10
   lat pull down 45 4x10
   dumbbell bicep curl 12.5 4x10
 
@@ -553,9 +553,9 @@
 
 13.9.2021. Pull 20:30
   barbell deadlift 60 70 80 90 1x8
-  seated cable rows 45 4x10
+  seated cable row 45 4x10
   lat pull down 45 4x10
-  pullups 4x10
+  pull up 4x10
 
 14.9.2021. Push 20:30
   barbell bench press wide grip 50 4x10 55 1x8
@@ -564,7 +564,7 @@
   triceps pushdown 11.3 4x10
 
 16.9.2021. Pull 11:00
-  pullups 3x10
+  pull up 3x10
   dumbbell deadlift 30 4x10
   dumbbell bicep curl 10 4x10
   dumbbell bent over row 20 4x10
@@ -580,9 +580,9 @@
   run 5km 30min
 
 20.9.2021. Pull 19:30
-  pullups 4x10
+  pull up 4x10
   chin up 10 2x6 0 2x10
-  seated cable rows 52 2x6 45 2x10
+  seated cable row 52 2x6 45 2x10
   lat pulldown 52 2x6 45 2x10
   dumbbell bicep curl 12.5 4x10
   barbell deadlift 60 4x10
@@ -603,18 +603,49 @@
 12.3.2023. Home 10:30
   deadlift 27.5 10x10
   clean 27.5 4x8
-  font squat 27.5 4x10
+  front squat 27.5 4x10
 
-13.3.2023 chest 14:30
-  dumbbell press 16 1x12 22 3x10
+13.3.2023. chest 14:30
+  dumbbell bench press 16 1x12 22 3x10
   dip 14 4x12
-  incline press 30 4x12
-  overhead press 20 4x10
+  incline bench press 30 4x12
+  overhead barbell press 20 4x10
 
-14.3.2023 legs 14:00
+14.3.2023. legs 14:00
   squat 50 4x10
   deadlift 50 40 2x10
   hip thrust 40 4x12
-  dumbbell bench lunge 16 1x5 16 1x7 16 2x10
+  dumbbell bulgarian split squat 16 1x5 16 1x7 16 2x10
   leg press 82 4x12
-  single leg calf raises 4x12
+  one leg calf raise 4x12
+
+15.3.2023. back 13:45
+  barbell row 20 40 1x10 30 3x10
+  back extension 4x12
+  pull up -14 4x8
+  diverging lat pull down 41 1x12 50 3x12
+  diverging seated row 41 1x12 50 3x12
+  dumbbell reverse flye 4 4x12
+  one arm landmine row 20 4x10
+  y raise 4x12
+  cable y raise 3 4x12
+  cat cow 4x12
+
+17.3.2023. chest 14:45
+  push up 4x12
+  push up wide 4x12
+  diamond push up 4x12
+  dumbbell bench press 17.5 4x12
+  dip 4x12
+  badminton ::45
+  squash ::45
+
+18.3.2023. legs 10:45
+  ski :5:
+
+19.3.2023. form 18:00
+  deadlift 17.5 6x12
+  front squat 17.5 4x12
+  squat 17.5 4x12
+  barbell row 17.5 5x12
+  barbell curl 17.5 4x12

@@ -1,6 +1,9 @@
 import csv
 import os
+import re
+import string
 
+from functools import partial
 from datetime import datetime
 
 FILE_DIR = os.path.dirname(__file__)
@@ -34,46 +37,59 @@ for workout in workouts:
     date = datetime.strptime(date, "%d.%m.%Y.")
 
     for entry in workout:
-        i = 0
+        tokens = entry.strip().split()
+        exercise_name_arr = []
+        last_weight = 0
+        still_entering_the_exercise_name = True
+        durations = []
+        sets_and_reps = []
+        for i, token in enumerate(tokens):
+            # word in the exercise name
+            if token.isalpha():
+                if not still_entering_the_exercise_name:
+                    raise RuntimeError(
+                        f"Exercise names can't contain words with non-alphabetic characters. Word '{token}' can't be the after the word '{tokens[i-1]}' in the exercise line: '{entry}'. If you meant to write a number, write it in the textual form e.g. '30' should be written as 'thirty'. A full example would be 'thirty degree incline bench 80 4x12'"
+                    )
+                exercise_name_arr.append(token)
+            # weight in default units e.g. 80.5
+            elif re.match(r"^-?\d*\.?\d+$", token):
+                if i >= len(tokens) - 1:
+                    raise RuntimeError(
+                        f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps or duration of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
+                    )
+                last_weight = float(token)
+            # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
+            # duration e.g. ::5 or 1:34:45 or :189:
+            elif match_object := re.match(r"^(\d*):(\d*):(\d*)$", token):
+                hours, minutes, seconds = map(
+                    lambda x: int(x) if x else 0, match_object.groups()
+                )
+                durations.append((seconds + 60 * minutes + 3600 * hours, last_weight))
+            # sets and reps e.g. 5x10
+            elif match_object := re.match(r"^(\d*)x(\d+)$", token):
+                sets, reps = match_object.groups()
+                if not sets:
+                    sets = "0"
+                sets_and_reps.append((int(sets), int(reps), last_weight))
+            # custom unit e.g. 5km or 12lb
+            elif match_object := re.match(r"^-?\d*\.?\d+\w+$", token):
+                # TODO(mastermedo): implement custom units support
+                continue
+            else:
+                raise RuntimeError(
+                    f"Word '{token}' was not recognised as a valid word in the exercise line: '{entry}'. Valid words can be:\n  exercise names - alphabetic strings, e.g. thirty degree incline bench press,\n  weight - decimal numbers, e.g. 40.25\n  duration - hours:minutes:seconds, e.g. 5::20\n  sets and reps - number of sets and reps separated by the letter 'x', e.g. 5x10"
+                )
 
-        exercise_name = ""
-        while i < len(entry) and (entry[i].isalpha() or entry[i].isspace()):
-            exercise_name += entry[i]
-            i += 1
+        exercise_name = " ".join(exercise_name_arr)
+        if exercise_name in aliases:
+            exercise_name = aliases[exercise_name]
 
-        exercise_name = exercise_name.strip()
-        if exercise_name not in exercises:
-            if exercise_name in aliases:
-                exercise_name = aliases[exercise_name]
-
-        lifts = []
-        while i < len(entry):
-            weight = ""
-            while i < len(entry) and entry[i] != "x":
-                weight += entry[i]
-                i += 1
-
-            repetition = ""
-            index = weight.rfind(" ")
-            repetition = weight[index:] if index > -1 else weight
-            weight = weight[:index] if index >= -1 else ""
-
-            while i < len(entry) and entry[i] != " ":
-                repetition += entry[i]
-                i += 1
-
-            try:
-                sets, reps = map(int, repetition.split("x"))
-                for w in weight.strip().split():
-                    lifts.append((sets, reps, float(w)))
-                else:
-                    lifts.append((sets, reps, 0))
-            except Exception:
-                # print(date, exercise_name, e)
-                pass
-
-        for sets, reps, weight in lifts:
+        for sets, reps, weight in sets_and_reps:
             data.append((date, exercise_name, sets, reps, weight))
+
+        # TODO(mastermedo): implement tracking durations
+        for duration, weight in durations:
+            pass
         # print(date, description, time)
         # print(lifts)
     # print()
