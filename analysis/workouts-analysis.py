@@ -3,6 +3,7 @@ import os
 import re
 import matplotlib.pyplot as plt
 
+from collections import defaultdict
 from datetime import datetime, timedelta
 from matplotlib import rcParams
 
@@ -14,8 +15,12 @@ FILE_DIR = os.path.dirname(__file__)
 EXERCISES_PATH = os.path.join(
     FILE_DIR, "../datasets/exercises/bodybuilding.com/exercises.csv"
 )
+EXERCISES_ENRICHMENT_PATH = os.path.join(
+    FILE_DIR, "../datasets/exercises/enrichment/enrichment.csv"
+)
 WORKOUTS_PATH = os.path.join(FILE_DIR, "../datasets/workouts/workouts.txt")
 ALIASES_PATH = os.path.join(FILE_DIR, "../datasets/aliases/aliases.txt")
+MY_BODYWEIGHT = 70
 
 
 def parse_exercise_name(exercise_name):
@@ -24,11 +29,31 @@ def parse_exercise_name(exercise_name):
 
 with open(EXERCISES_PATH) as f:
     exercises = {
-        parse_exercise_name(exercise["name"]) for exercise in csv.DictReader(f)
+        parse_exercise_name(exercise["name"]): exercise
+        for exercise in csv.DictReader(f)
     }
 
+aliases = {}
 with open(ALIASES_PATH) as f:
-    aliases = {alias["alias"]: alias["exercise"] for alias in csv.DictReader(f)}
+    for alias in csv.DictReader(f):
+        if alias["exercise"] not in exercises:
+            raise RuntimeError(
+                f"Faulty configuration of the aliases file: '{ALIASES_PATH}'. The exercise '{alias['exercise']}' doesn't map to any exercise in the exercises file: '{EXERCISES_PATH}'. The alias '{alias['alias']} needs to be reconfigured."
+            )
+        if alias["alias"] in aliases:
+            raise RuntimeError(
+                f"Faulty configuration of the aliases file: '{ALIASES_PATH}'. The alias '{alias['alias']} has already been configured to map to the exercise '{aliases[alias['alias']]}', so it can't be remapped to '{alias['exercise']}'. Please delete one of the entries."
+            )
+        aliases[alias["alias"]] = alias["exercise"]
+
+enrichments = defaultdict(dict)
+with open(EXERCISES_ENRICHMENT_PATH) as f:
+    for exercise in csv.DictReader(f):
+        if exercise["name"] not in exercises:
+            raise RuntimeError(
+                f"Faulty configuration of the exercises enrichment file: '{EXERCISES_ENRICHMENT_PATH}', the exercise '{exercise['name']}' doesn't exist in the exercises file: '{EXERCISES_PATH}'."
+            )
+        enrichments[exercise["name"]] = exercise
 
 with open(WORKOUTS_PATH, "r") as f:
     workouts = f.read().split("\n\n")
@@ -43,6 +68,7 @@ for workout in workouts:
     for entry in workout:
         tokens = entry.strip().split()
         exercise_name_arr = []
+        # TODO(mastermedo): refactor last_weight into an array because the following line might be written: 'lat pull down 50 30 40 1x12'. This should be evaluated as '50 1x12 30 1x12 40 1x12'.
         last_weight = 0
         still_entering_the_exercise_name = True
         durations = []
@@ -61,7 +87,18 @@ for workout in workouts:
                     raise RuntimeError(
                         f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps or duration of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
                     )
-                # TODO(mastermedo): add a new database file for enriching exercise data with the field is_bodyweight
+
+                # ########## BEGIN DATA BACKFILL ##########
+                # TODO(mastermedo): remove this code
+                weight = float(token)
+                exercise_name = " ".join(exercise_name_arr)
+                if exercise_name in aliases:
+                    exercise_name = aliases[exercise_name]
+                if weight <= 0:
+                    if "is bodyweight" not in exercises[exercise_name]:
+                        enrichments[exercise_name]["is bodyweight"] = True
+                # ########## END DATA BACKFILL ##########
+
                 # TODO(mastermedo): if the weight is <= 0; check if the current exercise is a bodyweight exercise. If it is; add the bodyweight to the weight, if it's not; throw an error, if it's not defined yet; throw an error to add it to the data enriching
                 last_weight = float(token)
             # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
@@ -117,8 +154,14 @@ for exercise in df.groupby("exercise"):
         max_ = 0
         for row in day[1].iterrows():
             row = row[1]
-            volume += row.sets * row.reps * row.weight
-            max_ = max(max_, row.weight)
+            weight = row.weight
+            if (
+                "is bodyweight" in enrichments[exercise[0]]
+                and enrichments[exercise[0]]["is bodyweight"]
+            ):
+                weight += MY_BODYWEIGHT
+            volume += row.sets * row.reps * weight
+            max_ = max(max_, weight)
 
         maxes.append(max_)
         volumes.append(volume)

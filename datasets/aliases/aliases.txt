@@ -3,7 +3,6 @@ deadlift,barbell deadlift
 dip,chest dip
 dumbbell fly,dumbbell flyes
 lat pulldown,lat pull down
-cable pulldown,close grip lat pulldown
 squat,barbell full squat
 triceps cable push away,cable overhead triceps extension
 clean,power clean
