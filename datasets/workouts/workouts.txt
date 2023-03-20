@@ -23,7 +23,7 @@
   chin up 4x10
   seated cable row 17.5 4x8
   dumbbell bent over row 17.5 4x8
-  reverse machine flye 5 4x10
+  reverse machine fly 5 4x10
   dumbbell bicep curl 10 4x10
 
 29.5.2021. legs 10:00
@@ -35,7 +35,7 @@
 30.5.2021. push 10:00
   push up 4x12
   diamond push up 4x12
-  dumbbell flye 10 4x12
+  dumbbell fly 10 4x12
   dumbbell bench press 10 4x12
 
 31.5.2021. legs 16:00
@@ -86,7 +86,7 @@
   seated cable row 39 4x10
   lat pull down 32 4x12
   machine low row 20 4x12
-  reverse machine flye 25 4x10
+  reverse machine fly 25 4x10
   barbell front raise 18 4x12
   standing face pull 23 4x10
   chin up 4x6
@@ -183,7 +183,7 @@
   seated cable row 45 4x10
   lat pull down 45 4x10
   seated cable row 50 4x10
-  reverse machine flye 39 4x8
+  reverse machine fly 39 4x8
   chin up 4x10
   standing dumbbell shrug 20 4x12
   dumbbell bicep curl 10 4x12
@@ -211,7 +211,7 @@
   pull up 3x8
   seated cable row 52 3x10 25 5x12
   lat pull down 39 5x10
-  reverse machine flye 24 5x12
+  reverse machine fly 24 5x12
   dumbbell bicep curl 12.5 5x10
 
 21.6.2021. legs 20:30
@@ -230,7 +230,7 @@
   barbell deadlift bent row complex 20 30 40 50 60 50 1x12
   barbell deadlift 60 1x12 70 5x8
   machine low row 30 35 40 45 45 1x8
-  reverse machine flye 29 34 39 39 24 1x10
+  reverse machine fly 29 34 39 39 24 1x10
   lat pull down 45 52 52 45 1x10
   pull up 4x10
   dumbbell bicep curl 10 4x10
@@ -249,7 +249,7 @@
   barbell deadlift 30 40 50 60 70 80 90 1x12 100 1x3
   seated cable row 32 45 52 59 1x10 66 1x6
   lat pull down 39 45 52 52 1x12
-  reverse machine flye 34 39 45 49 1x10
+  reverse machine fly 34 39 45 49 1x10
 
 26.6.2021. push 20:30
   barbell bench press wide grip 20 30 40 50 1x12 40 1x10
@@ -275,7 +275,7 @@
   machine bicep curl 45 4x6
   barbell deadlift 40 50 60 70 90 1x10
   lat pull down 45 1x12 52 3x10
-  reverse machine flye 44 4x10
+  reverse machine fly 44 4x10
   side lateral raise 5 4x10
 
 29.6.2021. push 20:00
@@ -346,7 +346,7 @@
   incline bench press 20 40 2x10
   chest dip 0 0 5 10 1x12
   high to low cable chest fly 9 14 2x10
-  dumbbell flye 15 4x10
+  dumbbell fly 15 4x10
   triceps pushdown 14 4x12
 
 15.7.2021. pull 20:20
@@ -372,7 +372,7 @@
   incline bench press 30 4x10
   chest dip 10 5 2x10
   high to low cable chest fly 14 4x10
-  dumbbell flye 17.5 4x6
+  dumbbell fly 17.5 4x6
   triceps pushdown 14 4x10
   standing face pull 30 4x12
 
@@ -453,7 +453,7 @@
 6.8.2021. push 10:00
   one leg calf raise 4x20
   barbell squat 4x12
-  dumbbell flye 15 4x12
+  dumbbell fly 15 4x12
   push up 4x12
   seated dumbbell shoulder press 10 4x12
   chest dip 4x12
@@ -625,7 +625,7 @@
   pull up -14 4x8
   diverging lat pull down 41 1x12 50 3x12
   diverging seated row 41 1x12 50 3x12
-  dumbbell reverse flye 4 4x12
+  dumbbell reverse fly 4 4x12
   one arm landmine row 20 4x10
   y raise 4x12
   cable y raise 3 4x12
@@ -649,3 +649,8 @@
   squat 17.5 4x12
   barbell row 17.5 5x12
   barbell curl 17.5 4x12
+
+20.3.2023. chest 13:00
+  bench 50 4x10 40 1x12 1x18 2x12 35 1x12 1x20 2x12
+  dumbbell bench press 16 1x12 14 3x12
+  machine chest fly 3.5 7.5 10 7.5 1x12

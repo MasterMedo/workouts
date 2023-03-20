@@ -69,14 +69,14 @@ for workout in workouts:
         tokens = entry.strip().split()
         exercise_name_arr = []
         # TODO(mastermedo): refactor last_weight into an array because the following line might be written: 'lat pull down 50 30 40 1x12'. This should be evaluated as '50 1x12 30 1x12 40 1x12'.
-        last_weight = 0
-        still_entering_the_exercise_name = True
+        weights = [0]
+        last_action = "exercise_name"
         durations = []
         sets_and_reps = []
         for i, token in enumerate(tokens):
             # word in the exercise name
             if token.isalpha():
-                if not still_entering_the_exercise_name:
+                if last_action != "exercise_name":
                     raise RuntimeError(
                         f"Exercise names can't contain words with non-alphabetic characters. Word '{token}' can't be the after the word '{tokens[i-1]}' in the exercise line: '{entry}'. If you meant to write a number, write it in the textual form e.g. '30' should be written as 'thirty'. A full example would be 'thirty degree incline bench 80 4x12'"
                     )
@@ -87,10 +87,12 @@ for workout in workouts:
                     raise RuntimeError(
                         f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps or duration of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
                     )
+                if last_action != "weight":
+                    weights = []
 
+                weight = float(token)
                 # ########## BEGIN DATA BACKFILL ##########
                 # TODO(mastermedo): remove this code
-                weight = float(token)
                 exercise_name = " ".join(exercise_name_arr)
                 if exercise_name in aliases:
                     exercise_name = aliases[exercise_name]
@@ -100,23 +102,29 @@ for workout in workouts:
                 # ########## END DATA BACKFILL ##########
 
                 # TODO(mastermedo): if the weight is <= 0; check if the current exercise is a bodyweight exercise. If it is; add the bodyweight to the weight, if it's not; throw an error, if it's not defined yet; throw an error to add it to the data enriching
-                last_weight = float(token)
+                weights.append(weight)
+                last_action = "weight"
             # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
             # duration e.g. ::5 or 1:34:45 or :189:
             elif match_object := re.match(r"^(\d*):(\d*):(\d*)$", token):
                 hours, minutes, seconds = map(
                     lambda x: int(x) if x else 0, match_object.groups()
                 )
-                durations.append((seconds + 60 * minutes + 3600 * hours, last_weight))
+                for weight in weights:
+                    durations.append((seconds + 60 * minutes + 3600 * hours, weight))
+                last_action = "duration"
             # sets and reps e.g. 5x10
             elif match_object := re.match(r"^(\d*)x(\d+)$", token):
                 sets, reps = match_object.groups()
                 if not sets:
                     sets = "0"
-                sets_and_reps.append((int(sets), int(reps), last_weight))
+                for weight in weights:
+                    sets_and_reps.append((int(sets), int(reps), weight))
+                last_action = "sets_and_reps"
             # custom unit e.g. 5km or 12lb
             elif match_object := re.match(r"^-?\d*\.?\d+\w+$", token):
                 # TODO(mastermedo): implement custom units support
+                last_action = "custom_unit"
                 continue
             else:
                 raise RuntimeError(
