@@ -22,7 +22,15 @@
 <!-- </p> -->
 
 ## :clipboard: description
-`workouts` let's you analyse your workout data, so you can make insights about it and adjust your schedule to meet your goals quicker.
+`workouts` let's you analyse your workout data, so you can make insights about it and adjust your schedule to meet your goals quicker. `workouts` lets you track two metrics:
+
+- volume per exercise
+- max weight (personal best) per exercise
+
+# how it works
+While doing a workout, the user writes workouts in their note taking mobile application of choice in a particular user-friendly format. Every so often the user manually copies those notes into the `/datasets/workouts/workouts.txt` and runs the `/analysis/workouts-analysis.py` which creates progress graphs per exercise in two formats volume[kg]/timestamp and max weight[kg]/timestamp.
+
+The goal is to keep progressively increasing volume and/or max weight.
 
 ## :zap: features
 - parse workouts from a simple form
@@ -42,6 +50,13 @@
 ## :shipit: installation
 ## :bulb: ideas for tests
 ## :question: usage
+## future work
+Exercises will be connected to muscle groups and how much do they actually strain the muscle so that these metrics can be tracked:
+
+- volume per muscle group
+- max weight(personal best) per muscle group
+
+The program will suggest future exercises based on the rate of progress the user wants to have.
 <p align="center">
   <a href="#">
     <img src="https://img.shields.io/badge/⬆️back_to_top_⬆️-white" alt="Back to top" title="Back to top"/>
