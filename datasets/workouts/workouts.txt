@@ -654,3 +654,6 @@
   bench 50 4x10 40 1x12 1x18 2x12 35 1x12 1x20 2x12
   dumbbell bench press 16 1x12 14 3x12
   machine chest fly 3.5 7.5 10 7.5 1x12
+
+20.3.2023. deadlifts 19:00
+  deadlift 17.5 1x20 37.5 1x10 47.5 1x3 57.5 1x2 67.5 2x2
