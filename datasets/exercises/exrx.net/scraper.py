@@ -1,4 +1,5 @@
 import csv
+import re
 import requests
 import traceback
 from urllib.parse import urljoin, urldefrag
@@ -35,14 +36,18 @@ def get_name(soup: BeautifulSoup) -> str:
 
 def get_force(soup: BeautifulSoup) -> str:
     tag = soup.find("strong", string="Force:")
-    return tag.parent.next_sibling.a.text
+    if tag is None:
+        return "unspecified"
+    return tag.parent.find_next_sibling().a.text
 
 
 def get_muscles(soup: BeautifulSoup) -> dict[str, str]:
     muscles = {}
     tag = soup.find(["h2", "h3"], string="Muscles")
+    if tag is None:
+        raise RuntimeError("No muscle information.")
     while True:
-        tag = tag.next_sibling
+        tag = tag.find_next_sibling()
         if tag is None:
             break
 
@@ -50,17 +55,18 @@ def get_muscles(soup: BeautifulSoup) -> dict[str, str]:
             continue
 
         group = tag.text.split("(")[0].lower()
-        tag = tag.next_sibling
+        tag = tag.find_next_sibling()
 
         if tag is None or tag.name != "ul":
             break
 
         elements = ";".join(
-            muscle for muscle in tag.find_all(text=True) if muscle != "None"
+            muscle for muscle in tag.find_all(string=True) if muscle != "None"
         )
         for group in group.split("/"):
             if group:
-                muscles[group.strip().removesuffix("s")] = elements
+                group = re.sub(r"\s+", " ", group.strip())
+                muscles[group.removesuffix("s")] = elements
 
     return muscles
 
@@ -68,8 +74,10 @@ def get_muscles(soup: BeautifulSoup) -> dict[str, str]:
 def get_instructions(soup: BeautifulSoup) -> str:
     tag = soup.find("h2", string="Instructions")
     instructions = ""
+    if tag is None:
+        return instructions
     while True:
-        tag = tag.next_sibling
+        tag = tag.find_next_sibling()
         if tag is None:
             break
 
@@ -84,12 +92,13 @@ if __name__ == "__main__":
 
     response = requests.get("https://exrx.net/Lists/Directory", headers)
     soup = BeautifulSoup(response.text, "html5lib")
-    content = soup.find("div", class_="col-sm-6")
-    for action_tag in content.find_all("a"):
-        if not action_tag["href"].startswith("http"):
-            link = urljoin("https://exrx.net/Lists/", action_tag["href"])
+    for content in soup.find_all("div", class_="col-sm-6"):
+        for action_tag in content.find_all("a"):
+            link = action_tag["href"].strip()
+            if not link.startswith("http"):
+                link = urljoin("https://exrx.net/Lists/", link)
 
-        muscle_links.add(urldefrag(link)[0])
+            muscle_links.add(urldefrag(link)[0])
 
     for link in muscle_links:
         response = requests.get(link)
@@ -98,8 +107,8 @@ if __name__ == "__main__":
             action_tag = list_item.find("a", recursive=False)
             if action_tag is not None:
                 link = action_tag["href"].strip()
-                if not action_tag["href"].startswith("http"):
-                    link = urljoin("https://exrx.net/Lists/", action_tag["href"])
+                if not link.startswith("http"):
+                    link = urljoin("https://exrx.net/Lists/", link)
 
                 exercise_links.add(urldefrag(link)[0])
 
@@ -109,6 +118,11 @@ if __name__ == "__main__":
 
     for link in exercise_links:
         if link.startswith("https://exrx.net/WeightExercises/"):
+            if any(
+                tag in link for tag in ["Kettlebell", "OlympicLifts", "Other", "Power"]
+            ):
+                # These don't have any muscle information
+                continue
             response = requests.get(link)
             soup = BeautifulSoup(response.text, "html5lib")
             try:
