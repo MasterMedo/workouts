@@ -28,7 +28,7 @@
 - max weight (personal best) per exercise
 
 # how it works
-While doing a workout, the user writes workouts in their note taking mobile application of choice in a particular user-friendly format. Every so often the user manually copies those notes into the `/datasets/workouts/workouts.txt` and runs the `/analysis/workouts-analysis.py` which creates progress graphs per exercise in two formats volume[kg]/timestamp and max weight[kg]/timestamp.
+While doing a workout, you write workouts in your note taking mobile application of choice in a particular user-friendly format (see down). Every so often you manually copy those notes into the `/datasets/workouts/workouts.txt` and run the `/analysis/workouts-analysis.py`. That creates progress graphs per exercise in two formats; `volume[kg]/timestamp` and `max weight[kg]/timestamp`.
 
 The goal is to keep progressively increasing volume and/or max weight.
 
@@ -51,12 +51,15 @@ The goal is to keep progressively increasing volume and/or max weight.
 ## :bulb: ideas for tests
 ## :question: usage
 ## future work
-Exercises will be connected to muscle groups and how much do they actually strain the muscle so that these metrics can be tracked:
-
-- volume per muscle group
-- max weight(personal best) per muscle group
-
-The program will suggest future exercises based on the rate of progress the user wants to have.
+- connect exercises to muscle groups
+- calculate strain on all muscles per exercise
+    - e.g. barbell bench press wide grip
+        - pectoral muscle 60% of the weight
+        - triceps 20% of the weight
+- create graph: volume per muscle
+- create graph: max weight (personal best) per muscle
+- suggest exercises that need to be done so that all muscle groups are exercised
+- calculate how much weight and sets/reps need to be lifted per exercise
 <p align="center">
   <a href="#">
     <img src="https://img.shields.io/badge/⬆️back_to_top_⬆️-white" alt="Back to top" title="Back to top"/>
