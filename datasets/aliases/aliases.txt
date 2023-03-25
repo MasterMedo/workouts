@@ -19,6 +19,8 @@ barbell row,bent over barbell row
 diverging lat pull down,lat pull down
 diverging seated row,machine seated row
 seated cable row,seated cable rows
+close grip seated cable row,seated cable rows
+wide grip seated cable row,seated cable rows
 pull up,pullups
 push up,pushups
 reverse machine fly,reverse machine flyes
