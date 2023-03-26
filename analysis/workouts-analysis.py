@@ -68,7 +68,6 @@ for workout in workouts:
     for entry in workout:
         tokens = entry.strip().split()
         exercise_name_arr = []
-        # TODO(mastermedo): refactor last_weight into an array because the following line might be written: 'lat pull down 50 30 40 1x12'. This should be evaluated as '50 1x12 30 1x12 40 1x12'.
         weights = [0]
         last_action = "exercise_name"
         durations = []
@@ -92,7 +91,6 @@ for workout in workouts:
 
                 weights.append(float(token))
                 last_action = "weight"
-            # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
             # duration e.g. ::5 or 1:34:45 or :189:
             elif match_object := re.match(r"^(\d*):(\d*):(\d*)$", token):
                 hours, minutes, seconds = map(
@@ -112,7 +110,6 @@ for workout in workouts:
 
             # custom unit e.g. 5km or 12lb
             elif match_object := re.match(r"^-?\d*\.?\d+\w+$", token):
-                # TODO(mastermedo): implement custom units support
                 last_action = "custom_unit"
                 continue
             else:
@@ -127,7 +124,6 @@ for workout in workouts:
         for sets, reps, weight in sets_and_reps:
             workouts_sets_and_reps.append((date, exercise_name, sets, reps, weight))
 
-        # TODO(mastermedo): implement tracking durations
         for duration, weight in durations:
             pass
 
