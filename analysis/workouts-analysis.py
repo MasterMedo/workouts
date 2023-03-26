@@ -20,7 +20,7 @@ EXERCISES_ENRICHMENT_PATH = os.path.join(
 )
 WORKOUTS_PATH = os.path.join(FILE_DIR, "../datasets/workouts/workouts.txt")
 ALIASES_PATH = os.path.join(FILE_DIR, "../datasets/aliases/aliases.txt")
-MY_BODYWEIGHT = 70
+BODYWEIGHT = 70
 
 
 def parse_exercise_name(exercise_name):
@@ -90,19 +90,7 @@ for workout in workouts:
                 if last_action != "weight":
                     weights = []
 
-                weight = float(token)
-                # ########## BEGIN DATA BACKFILL ##########
-                # TODO(mastermedo): remove this code
-                exercise_name = " ".join(exercise_name_arr)
-                if exercise_name in aliases:
-                    exercise_name = aliases[exercise_name]
-                if weight <= 0:
-                    if "is bodyweight" not in exercises[exercise_name]:
-                        enrichments[exercise_name]["is bodyweight"] = True
-                # ########## END DATA BACKFILL ##########
-
-                # TODO(mastermedo): if the weight is <= 0; check if the current exercise is a bodyweight exercise. If it is; add the bodyweight to the weight, if it's not; throw an error, if it's not defined yet; throw an error to add it to the data enriching
-                weights.append(weight)
+                weights.append(float(token))
                 last_action = "weight"
             # TODO(mastermedo): what if an exercise has a duration and sets/reps immediately one after the other? That should be marked as a single exercise indicating how long it took to do those reps and sets. Currently it is being marked as a completely separate exercise.
             # duration e.g. ::5 or 1:34:45 or :189:
@@ -121,6 +109,7 @@ for workout in workouts:
                 for weight in weights:
                     sets_and_reps.append((int(sets), int(reps), weight))
                 last_action = "sets_and_reps"
+
             # custom unit e.g. 5km or 12lb
             elif match_object := re.match(r"^-?\d*\.?\d+\w+$", token):
                 # TODO(mastermedo): implement custom units support
@@ -163,11 +152,10 @@ for exercise in df.groupby("exercise"):
         for row in day[1].iterrows():
             row = row[1]
             weight = row.weight
-            if (
-                "is bodyweight" in enrichments[exercise[0]]
-                and enrichments[exercise[0]]["is bodyweight"]
-            ):
-                weight += MY_BODYWEIGHT
+            bodyweight_lifted = float(
+                enrichments[exercise[0]].get("bodyweight percentage", "0")
+            )
+            weight += BODYWEIGHT * bodyweight_lifted
             volume += row.sets * row.reps * weight
             max_ = max(max_, weight)
 

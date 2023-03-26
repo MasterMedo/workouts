@@ -168,7 +168,7 @@
   thigh adductor 41 4x12
   thigh abductor 39 4x10
   leg extension 45 4x10
-  seated calf raise 4x10
+  seated calf raise 35 4x10
   back extension 4x12
 
 16.6.2021. push 20:30
@@ -393,7 +393,7 @@
   ghd sit up 10 4x12
 
 24.7.2021. arms 18:00
-  triceps pushdown 5x12
+  triceps pushdown 9 5x12
   dumbbell bicep curl 15 4x10
   standing bent over one arm dumbbell triceps extension 25 4x12
 
