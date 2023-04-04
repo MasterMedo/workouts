@@ -9,7 +9,7 @@ clean,power clean
 front squat,barbell front squat
 row,bent over barbell row
 upright row,barbell upright row
-one leg calf raise,single leg standing dumbbell calf raise
+one leg standing dumbbell calf raise,single leg standing dumbbell calf raise
 dumbbell lunge,dumbbell lunges
 y raise,lying rear delt y
 overhead barbell press,standing barbell shoulder press
@@ -28,3 +28,4 @@ dumbbell reverse fly,incline dumbbell reverse fly
 one leg cable hip extension,single leg cable hip extension
 cable y raise,standing low pulley deltoid raise
 bench,barbell bench press wide grip
+split squat,dumbbell bulgarian split squat

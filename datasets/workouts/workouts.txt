@@ -92,7 +92,7 @@
   chin up 4x6
   dumbbell bicep curl 10 4x10
   back extension 4x12
-  one leg calf raise 4x12
+  one leg standing dumbbell calf raise 4x12
 
 6.6.2021. legs 21:30
   leg press 127 4x12
@@ -141,7 +141,7 @@
 12.6.2021. legs 21:30
   leg press 45 66 93 141 155 1x12 175 1x10
   barbell deadlift 40 50 60 1x12 70 80 1x10
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   thigh adductor 23 1x12 32 1x12 41 1x12 52 1x10
   thigh abductor 32 1x12 45 1x12 52 1x12 39 1x12
 
@@ -365,7 +365,7 @@
   thigh abductor 45 39 2x12
   thigh adductor 59 66 73 79 1x12
   leg extension 65 70 2x12
-  one leg calf raise 4x16
+  one leg standing dumbbell calf raise 4x16
 
 19.7.2021. push 19:00
   barbell bench press wide grip 40 4x10 50 1x8
@@ -411,7 +411,7 @@
 29.7.2021. legs 15:00
   dumbbell lunge 30 4x12
   barbell squat 4x12
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   swim 30min 2km
 
 31.7.2021. push 20:00
@@ -424,17 +424,17 @@
   back extension 2x12
 
 1.8.2021. legs 8:00
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
 
 2.8.2021. pull 15:00
   barbell deadlift 30 4x12
   pull up 3x12
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
 
 3.8.2021. legs 8:00
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
 
 4.8.2021. legs 21:00
@@ -443,15 +443,15 @@
   thigh abductor 45 4x12
   thigh adductor 59 66 73 79 1x12
   lying leg curl 45 4x12
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
 
 5.8.2021. legs 8:00
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
 
 6.8.2021. push 10:00
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell squat 4x12
   dumbbell fly 15 4x12
   push up 4x12
@@ -460,7 +460,7 @@
   bench dip 4x12
 
 8.8.2021. pull 19:00
-  one leg calf raise 4x20
+  one leg standing dumbbell calf raise 4x20
   barbell deadlift 30 4x12
   standing bent over one arm dumbbell triceps extension 25 4x12
   bent over plate rear delt raise 7.5 4x12
@@ -468,7 +468,7 @@
 
 10.8.2021. legs 16:00
   barbell squat 30 4x12
-  one leg calf raise 10 4x20
+  one leg standing dumbbell calf raise 10 4x20
   dumbbell lunge 30 4x12
   thigh adductor 40 4x12
 
@@ -617,7 +617,7 @@
   hip thrust 40 4x12
   dumbbell bulgarian split squat 16 1x5 16 1x7 16 2x10
   leg press 82 4x12
-  one leg calf raise 4x12
+  one leg standing dumbbell calf raise 4x12
 
 15.3.2023. back 13:45
   barbell row 20 40 1x10 30 3x10
@@ -637,11 +637,11 @@
   diamond push up 4x12
   dumbbell bench press 17.5 4x12
   dip 4x12
-  badminton ::45
-  squash ::45
+  badminton 45min
+  squash 45min
 
 18.3.2023. legs 10:45
-  ski :5:
+  ski 5h
 
 19.3.2023. form 18:00
   deadlift 17.5 6x12
@@ -685,3 +685,34 @@
   thigh adductor 65 4x12
   leg extension 30 40 45 45 x12
   seated calf raise 15 30 45 50 x12
+
+27.3.2023. deadlift 16:00
+  deadlift 37.5 57.5 x10 67.5 3x5
+
+28.3.2023. squat 15:30
+  squat 17.5 47.5 x10 67.5 3x6
+
+29.3.2023. chest 13:30
+  bench 20 40 50 x10 60 x7 x5 50 x10
+  dip -14 -9 0 x10
+
+31.3.2023. 19:00
+  push up 6x12
+  deadlift 17.5 47.5 2x12 67.5 6x6
+
+2.4.2023. 19:00
+  push up 4x12
+  dumbbell flyes 10 2x10
+  butterfly 40 2x12
+  deadlift 37.5 x12 57.5 67.5 x10 67.5 x6 2x10
+  barbell row 37.5 3x12
+
+3.4.2023. 20:30
+  squat 37.5 x12 57.5 67.5 x10
+  split squat 10 15 x12
+  one leg standing dumbbell calf raise 4x20
+
+4.4.2023. 20:00
+  overhead barbell press 17.5 4x20
+  barbell curl 17.5 4x15
+  standing dumbbell shrug 5 x20

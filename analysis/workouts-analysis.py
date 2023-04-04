@@ -4,6 +4,7 @@ import re
 import matplotlib.pyplot as plt
 
 from collections import defaultdict
+from dataclasses import dataclass
 from datetime import datetime, timedelta
 from matplotlib import rcParams
 
@@ -70,8 +71,7 @@ for workout in workouts:
         exercise_name_arr = []
         weights = [0]
         last_action = "exercise_name"
-        durations = []
-        sets_and_reps = []
+        workout_instances = []
         for i, token in enumerate(tokens):
             # word in the exercise name
             if token.isalpha():
@@ -84,28 +84,26 @@ for workout in workouts:
             elif re.match(r"^-?\d*\.?\d+$", token):
                 if i >= len(tokens) - 1:
                     raise RuntimeError(
-                        f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps or duration of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
+                        f"Weight '{token}' can't be the last word in the exercise line: '{entry}'. Number of sets and reps of the exercise needs to be added after the weight. E.g. 'wide grip lat pull down 20 4x12' (20kg for 4 sets of 12 reps) or 'tenis :1:30'"
                     )
                 if last_action != "weight":
                     weights = []
 
                 weights.append(float(token))
                 last_action = "weight"
-            # duration e.g. ::5 or 1:34:45 or :189:
-            elif match_object := re.match(r"^(\d*):(\d*):(\d*)$", token):
-                hours, minutes, seconds = map(
-                    lambda x: int(x) if x else 0, match_object.groups()
-                )
-                for weight in weights:
-                    durations.append((seconds + 60 * minutes + 3600 * hours, weight))
-                last_action = "duration"
             # sets and reps e.g. 5x10
             elif match_object := re.match(r"^(\d*)x(\d+)$", token):
                 sets, reps = match_object.groups()
                 if not sets:
                     sets = "0"
-                for weight in weights:
-                    sets_and_reps.append((int(sets), int(reps), weight))
+                for i, weight in enumerate(weights):
+                    workout_instances.append(
+                        {
+                            "sets": int(sets),
+                            "reps": int(reps),
+                            "weight": weight,
+                        }
+                    )
                 last_action = "sets_and_reps"
 
             # custom unit e.g. 5km or 12lb
@@ -114,23 +112,23 @@ for workout in workouts:
                 continue
             else:
                 raise RuntimeError(
-                    f"Word '{token}' was not recognised as a valid word in the exercise line: '{entry}'. Valid words can be:\n  exercise names - alphabetic strings, e.g. thirty degree incline bench press,\n  weight - decimal numbers, e.g. 40.25\n  duration - hours:minutes:seconds, e.g. 5::20\n  sets and reps - number of sets and reps separated by the letter 'x', e.g. 5x10"
+                    f"Word '{token}' was not recognised as a valid word in the exercise line: '{entry}'. Valid words can be:\n  exercise names - alphabetic strings, e.g. thirty degree incline bench press,\n  weight - decimal numbers, e.g. 40.25\n  sets and reps - number of sets and reps separated by the letter 'x', e.g. 5x10"
                 )
 
         exercise_name = " ".join(exercise_name_arr)
         if exercise_name in aliases:
             exercise_name = aliases[exercise_name]
 
-        for sets, reps, weight in sets_and_reps:
-            workouts_sets_and_reps.append((date, exercise_name, sets, reps, weight))
-
-        for duration, weight in durations:
-            pass
-
-# with open("workouts.csv", "w") as f:
-#     writer = csv.writer(f)
-#     writer.writerows(workouts_sets_and_reps)
-
+        for workout_instance in workout_instances:
+            workouts_sets_and_reps.append(
+                (
+                    date,
+                    exercise_name,
+                    workout_instance.get("sets"),
+                    workout_instance.get("reps"),
+                    workout_instance.get("weight"),
+                )
+            )
 
 rcParams.update({"figure.autolayout": True})
 sns.set(font_scale=1.5)
@@ -164,7 +162,6 @@ for exercise in df.groupby("exercise"):
         continue
 
     if len(dates) > 5 and dates[-1] > datetime.now() - timedelta(weeks=12):
-        # print('common: ' + exercise[0].title())
         dates = list(matplotlib.dates.date2num(dates))
         fig, axs = plt.subplots(2)
         fig.suptitle(exercise[0].title())
@@ -175,4 +172,4 @@ for exercise in df.groupby("exercise"):
         fig.autofmt_xdate()
         plt.show()
     # else:
-    #     print('rare: ' + exercise[0].title())
+    #     print(f"{exercise[0].title()}: {len(dates)}, {dates[-1]}")
