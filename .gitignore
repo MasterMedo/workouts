@@ -1,4 +1,1 @@
-blaze-bin/
-blaze-out/
-blaze-testlogs/
-blaze-workouts/
+/bazel-*
