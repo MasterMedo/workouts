@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package workouts.exrxnet;
+
+import "proto/exrxnet/muscle.proto";
+
+message Exercise {
+  string id = 1;
+  string name = 2;
+
+  enum MuscleForce {
+    MUSCLE_FORCE_UNSPECIFIED = 0;
+    MUSCLE_FORCE_PULL = 1;
+    MUSCLE_FORCE_PUSH = 2;
+  }
+  MuscleForce force = 3;
+
+  repeated Muscle synergist = 4;
+  repeated Muscle stabilizer = 5;
+  repeated Muscle dynamic_stabilizer = 6;
+  repeated Muscle antagonist_stabilizer = 7;
+  string instructions = 8;
+}

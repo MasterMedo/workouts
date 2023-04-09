@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package workouts.bodybuildingcom;
+
+import "proto/bodybuildingcom/muscle.proto";
+import "proto/bodybuildingcom/equipment.proto";
+
+message Exercise {
+    string id = 1;
+    string name = 2;
+    Muscle muscle = 3;
+    Equipment equipment = 4;
+    string description = 5;
+    string benefits = 6;
+    string instructions = 7;
+    float rating = 8;
+}

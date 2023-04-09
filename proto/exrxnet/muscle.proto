@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package workouts.exrxnet;
+
+message Muscle {
+  string id = 1;
+  string name = 2;
+
+  enum MusclePart {
+    MUSCLE_PART_UNSPECIFIED = 0;
+    MUSLCE_PART_BACK = 1;
+    MUSLCE_PART_CALVES = 2;
+    MUSLCE_PART_CHEST = 3;
+    MUSLCE_PART_FOREARMS = 4;
+    MUSLCE_PART_HIPS = 5;
+    MUSLCE_PART_NECK = 6;
+    MUSLCE_PART_SHOULDERS = 7;
+    MUSLCE_PART_THIGH = 8;
+    MUSLCE_PART_UPPER = 9;
+    MUSLCE_PART_WAIST = 10;
+  }
+  MusclePart part = 3;
+
+  enum MusclePosition {
+    MUSCLE_POSITION_UNSPECIFIED = 0;
+    MUSCLE_POSITION_BACK = 1;
+    MUSCLE_POSITION_FRONT = 2;
+  }
+  MusclePosition position = 4;
+
+  enum MuscleSegment {
+    MUSCLE_SEGMENT_UNSPECIFIED = 0;
+    MUSCLE_SEGMENT_ABDOMEN = 1;
+    MUSCLE_SEGMENT_FOREARM = 2;
+    MUSCLE_SEGMENT_HEAD = 3;
+    MUSCLE_SEGMENT_LEG = 4;
+    MUSCLE_SEGMENT_NECK = 5;
+    MUSCLE_SEGMENT_PELVIS = 6;
+    MUSCLE_SEGMENT_THIGH = 7;
+    MUSCLE_SEGMENT_THORAX = 8;
+    MUSCLE_SEGMENT_UPPER = 9;
+  }
+  MuscleSegment segment = 5;
+}

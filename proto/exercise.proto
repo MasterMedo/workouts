@@ -1,0 +1,89 @@
+syntax = "proto3";
+
+package workouts;
+
+import "proto/muscle.proto";
+
+message Exercise {
+  // TODO: implement validator for the following behaviour:
+  // name is the unique id of the exercise.
+  //
+  // TODO: implement validator for the following behaviour:
+  // It consists of lowercase ascii letters delimited by spaces.
+  //
+  // TODO: implement validator for the following behaviour:
+  // The name is always in singular form e.g. "squat", not "squats".
+  //
+  // TODO: implement validator for the following behaviour:
+  // It is generated from the ExerciseName proto message by joining the
+  // values of all fields in the ExerciseName proto delimited by spaces
+  // in field proto definition order.
+  string name = 1;
+
+  // preferred_alias is a user defined nickname for this exercise.
+  //
+  // TODO: implement validator for the following behaviour:
+  // Two different exercises can't have the same preferred_alias.
+  string preferred_alias = 2;
+
+  // muscle_percentage defines what percentage of the weight is lifted by a
+  // particular muscle group.
+  // The key is a valid name of the Muscle proto in //proto/muscle.proto.
+  // TODO: implement validator for the following behaviour:
+  // The value is a number lower than 1, higher than 0 and rounded to 2
+  // decimals.
+  //
+  // This field is used to calculate strain on all muscles worked in the
+  // exercise in an effort to approximate total volume lifted by a particular
+  // muscle during a workout.
+  //
+  // TODO: think of a solution to the following problem:
+  // Do values in this map have to sum to 1?
+  // No, the total weight lifted during an exercise cannot exceed the lifted
+  // amount. On the other hand, there are exercises where one muscle lifts
+  // the majority of the weight in the first part of the exercise and then
+  // the second muscle lifts the majority of the weight in the second part
+  // of the exercise, indicating a flaw in the way this field is used.
+  map<string, float> muscle_weight_percentage = 3;
+
+  // percentage_of_bodyweight_lifted is a estimate of what's the additional
+  // weight lifted when performing an exercise.
+  //
+  // TODO: implement validator for the following behaviour:
+  // The value is a number lower than 1, higher than 0 and rounded to 2
+  // decimals.
+  //
+  // For an explanation of how this value is calculated, look at the
+  // percentage_of_bodyweight_lifted_source_url field.
+  //
+  // TODO: validate that the percentage is a number lower than 1, and rounded
+  // to two decimals.
+  float percentage_of_bodyweight_lifted = 4;
+
+  // percentage_of_bodyweight_lifted_source_url is link to the source claiming
+  // how much bodyweight is lifted when performing an exercise.
+  //
+  // When a source can't be found, a calculation needs to be done by hand.
+  // Usually that means identifying all forces that take effect when performing
+  // an exercise and calculating the percentage of bodyweight that increases the
+  // strain on the muscles.
+  // Here is a good resource to get you started:
+  //   https://exrx.net/WeightTraining/Bodyweight
+  //
+  // A low hanging fruit approach for exercises that are performed in the
+  // opposite direction of gravity is to calculate the weight of the body parts
+  // that are lifted along with the barbell, or dumbbells. Include only
+  // the body parts that don't contain the muscles that perform the exercise.
+  // Here is a reference of percentages of weight bodyparts have:
+  //   https://exrx.net/Kinesiology/Segments
+  //
+  // TODO: think of a better way to calculate bodyweight strain on muscles.
+  // There are flaws to taking this approach. Weight on different parts of
+  // the body influences the difficulty of performing an exercise differently.
+  // For this reason, the percentage of bodyweight lifted indicates only the
+  // proportion of weight that produces a force in the same direction as the
+  // barbell, dumbbell or machine.
+  //
+  // TODO: validate that the string is a valid url.
+  string percentage_of_bodyweight_lifted_source_url = 5;
+}

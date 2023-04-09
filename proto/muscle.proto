@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package workouts;
+
+message Muscle {
+    // name is the unique id of the muscle group
+    string name = 1;
+}
