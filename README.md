@@ -57,15 +57,12 @@ Here are some graphs of my progress for popular exercises when I started working
 ![](./img/hip_thrust.png)
 ![](./img/squat.png)
 
-## :shipit: installation
-
-WIP
-
 ## future work
 
-1. Show weekly strain for a particular muscle group.
+1. Make the program easy to install and use by others.
+1. Show weekly strain of a particular muscle group.
 1. Identify underworked muscles and suggest exercises for them.
-1. Suggest exercises, weight, and number of sets and reps.
+1. Suggest weight to lift, and number of sets and reps to do for an exercise.
 
 <p align="center">
   <a href="#">
