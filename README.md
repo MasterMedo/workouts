@@ -22,38 +22,45 @@
 <!-- </p> -->
 
 ## :clipboard: description
-`workouts` visualises progress in max weight and weight volume for every exercise you're performing from a specific data format you write after each exercise.
 
-You record your exercises in `datasets/workouts/workouts.txt`:
+`workouts` visualises progress in maximum weight and weight volume for every exercise you're performing from a specific data format you write after each exercise.
+
+You record your exercises in `datasets/workouts/workouts.txt` in the following format:
 ```
-YYYY-MM-DD hh:mm
-  exercise1 WEIGHT SETSxREPS
-  exercise2 WEIGHT SETSxREPS WEIGHT SETSxREPS
+TIMESTAMP
+  EXERCISE_NAME WEIGHT SETSxREPS
+  EXERCISE_NAME WEIGHT SETSxREPS WEIGHT SETSxREPS
 
 2023-04-13 17:30
-  squat 80 4x12
-  deadlift 70 1x12 80 2x5 90 1x3
+  squat 80kg 4x12
+  deadlift 70kg x12 80kg 2x5 90kg x3
 ```
 
-And the workouts analysis tool in `analysis/workouts-analysis.py` draws the progress graph:
+Then you run `analysis/workouts-analysis.py` and it draws the progress of the maximum weight you lifted and total weight volume lifted on a particular day.
 
 ![](./img/squat.png)
 
 # How I use it
-While doing a workout, I write workouts in Google Keep on my phone.
-Every so often I copy those notes into the `/datasets/workouts/workouts.txt` on my laptop and run the `/analysis/workouts-analysis.py` script.
-Then I inspect the max weight and weight volume progress on particular exercises and adjust my future workouts to maintain the progress.
 
-The goal is to keep progressively increasing volume and/or max weight.
+While doing a workout, I write workouts in Google Keep on my phone.
+Every so often, I copy those notes into the `/datasets/workouts/workouts.txt` on my laptop and run the `/analysis/workouts-analysis.py` script.
+Then I inspect the maximum weight and weight volume progress on particular exercises and adjust my future workouts to maintain the progress.
+
+The goal is to keep progressively increasing volume and/or maximum weight.
 
 ## :chart_with_upwards_trend: analyse workout results
+
+Here are some graphs of my progress for popular exercises when I started working out:
+
 ![](./img/bench.png)
 ![](./img/dead_lift.png)
 ![](./img/hip_thrust.png)
 ![](./img/squat.png)
+
 ## :shipit: installation
-## :bulb: ideas for tests
-## :question: usage
+
+WIP
+
 ## future work
 
 1. Show weekly strain for a particular muscle group.
