@@ -22,44 +22,44 @@
 <!-- </p> -->
 
 ## :clipboard: description
-`workouts` let's you analyse your workout data, so you can make insights about it and adjust your schedule to meet your goals quicker. `workouts` lets you track two metrics:
+`workouts` visualises progress in max weight and weight volume for every exercise you're performing from a specific data format you write after each exercise.
 
-- volume per exercise
-- max weight (personal best) per exercise
+You record your exercises in `datasets/workouts/workouts.txt`:
+```
+YYYY-MM-DD hh:mm
+  exercise1 WEIGHT SETSxREPS
+  exercise2 WEIGHT SETSxREPS WEIGHT SETSxREPS
 
-# how it works
-While doing a workout, you write workouts in your note taking mobile application of choice in a particular user-friendly format (see down). Every so often you manually copy those notes into the `/datasets/workouts/workouts.txt` and run the `/analysis/workouts-analysis.py`. That creates progress graphs per exercise in two formats; `volume[kg]/timestamp` and `max weight[kg]/timestamp`.
+2023-04-13 17:30
+  squat 80 4x12
+  deadlift 70 1x12 80 2x5 90 1x3
+```
+
+And the workouts analysis tool in `analysis/workouts-analysis.py` draws the progress graph:
+
+![](./img/squat.png)
+
+# How I use it
+While doing a workout, I write workouts in Google Keep on my phone.
+Every so often I copy those notes into the `/datasets/workouts/workouts.txt` on my laptop and run the `/analysis/workouts-analysis.py` script.
+Then I inspect the max weight and weight volume progress on particular exercises and adjust my future workouts to maintain the progress.
 
 The goal is to keep progressively increasing volume and/or max weight.
 
-## :zap: features
-- parse workouts from a simple form
-- analyse workouts
-
 ## :chart_with_upwards_trend: analyse workout results
-![](./img/abdomenin.png)
-![](./img/abdomenout.png)
 ![](./img/bench.png)
-![](./img/biceps_curl.png)
 ![](./img/dead_lift.png)
 ![](./img/hip_thrust.png)
-![](./img/leg_extension.png)
-![](./img/leg_press.png)
-![](./img/pec_fly.png)
 ![](./img/squat.png)
 ## :shipit: installation
 ## :bulb: ideas for tests
 ## :question: usage
 ## future work
-- connect exercises to muscle groups
-- calculate strain on all muscles per exercise
-    - e.g. barbell bench press wide grip
-        - pectoral muscle 60% of the weight
-        - triceps 20% of the weight
-- create graph: volume per muscle
-- create graph: max weight (personal best) per muscle
-- suggest exercises that need to be done so that all muscle groups are exercised
-- calculate how much weight and sets/reps need to be lifted per exercise
+
+1. Show weekly strain for a particular muscle group.
+1. Identify underworked muscles and suggest exercises for them.
+1. Suggest exercises, weight, and number of sets and reps.
+
 <p align="center">
   <a href="#">
     <img src="https://img.shields.io/badge/⬆️back_to_top_⬆️-white" alt="Back to top" title="Back to top"/>
