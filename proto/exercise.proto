@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package workouts;
 
-import "proto/muscle.proto";
-
 message Exercise {
   // TODO: implement validator for the following behaviour:
   // name is the unique id of the exercise.
