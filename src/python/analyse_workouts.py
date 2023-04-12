@@ -1,10 +1,8 @@
 import csv
-import os
 import re
 import matplotlib.pyplot as plt
 
 from collections import defaultdict
-from dataclasses import dataclass
 from datetime import datetime, timedelta
 from matplotlib import rcParams
 
@@ -12,16 +10,13 @@ import pandas as pd
 import matplotlib
 import seaborn as sns
 
-FILE_DIR = os.path.dirname(__file__)
-EXERCISES_PATH = os.path.join(
-    FILE_DIR, "../datasets/exercises/bodybuilding.com/exercises.csv"
+from config.python.config import (
+    EXERCISES_PATH,
+    EXERCISES_ENRICHMENT_PATH,
+    WORKOUTS_PATH,
+    ALIASES_PATH,
+    BODYWEIGHT,
 )
-EXERCISES_ENRICHMENT_PATH = os.path.join(
-    FILE_DIR, "../datasets/exercises/enrichment/enrichment.csv"
-)
-WORKOUTS_PATH = os.path.join(FILE_DIR, "../datasets/workouts/workouts.txt")
-ALIASES_PATH = os.path.join(FILE_DIR, "../datasets/aliases/aliases.txt")
-BODYWEIGHT = 70
 
 
 def parse_exercise_name(exercise_name):

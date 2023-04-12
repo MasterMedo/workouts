@@ -2,15 +2,16 @@ import csv
 
 from datetime import datetime
 
+from config.python.config import EXERCISES_PATH, WORKOUTS_PATH
 
-with open("../datasets/exercises/bodybuilding.com/exercises.csv") as f:
+with open(EXERCISES_PATH) as f:
     exercises = list(csv.DictReader(f))
 names = {
     (exercise["name"].lower().replace("-", " "), exercise["muscle"])
     for exercise in exercises
 }
 
-with open("../datasets/workouts/workouts.txt", "r") as f:
+with open(WORKOUTS_PATH) as f:
     workouts = f.read().split("\n\n")
 
 data = []
