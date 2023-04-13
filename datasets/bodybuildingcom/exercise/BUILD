@@ -1,5 +1,5 @@
 filegroup(
-  name = "exercise_json_files",
-  srcs = ["hello.json"],
-  visibility = ["//visibility:public"],
+    name = "exercises_csv",
+    srcs = ["exercises.csv"],
+    visibility = ["//visibility:public"],
 )

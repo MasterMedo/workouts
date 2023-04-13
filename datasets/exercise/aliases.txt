@@ -1,0 +1,31 @@
+Alias,BodybuildingcomId
+barbell row,bent over barbell row
+bench,barbell bench press wide grip
+cable y raise,standing low pulley deltoid raise
+clean,power clean
+close grip seated cable row,seated cable rows
+deadlift,barbell deadlift
+dip,chest dip
+diverging lat pull down,lat pull down
+diverging seated row,machine seated row
+dumbbell fly,dumbbell flyes
+dumbbell lunge,dumbbell lunges
+dumbbell reverse fly,incline dumbbell reverse fly
+front squat,barbell front squat
+hip thrust,barbell hip thrust
+lat pulldown,lat pull down
+one arm landmine row,one arm long bar row
+one leg cable hip extension,single leg cable hip extension
+one leg standing dumbbell calf raise,single leg standing dumbbell calf raise
+overhead barbell press,standing barbell shoulder press
+pull up,pullups
+push up,pushups
+reverse machine fly,reverse machine flyes
+row,bent over barbell row
+seated cable row,seated cable rows
+split squat,dumbbell bulgarian split squat
+squat,barbell full squat
+triceps cable push away,cable overhead triceps extension
+upright row,barbell upright row
+wide grip seated cable row,seated cable rows
+y raise,lying rear delt y
