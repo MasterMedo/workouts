@@ -23,3 +23,8 @@ py_binary(
     "//datasets/exercises/bodybuilding.com:exercises_csv",
   ],
 )
+
+py_library(
+  name = "database",
+  srcs = ["database.py"],
+)
