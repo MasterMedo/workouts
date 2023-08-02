@@ -105,6 +105,10 @@ for workout in workouts:
             elif match_object := re.match(r"^-?\d*\.?\d+\w+$", token):
                 last_action = "custom_unit"
                 continue
+            # custom unit boulder, via ferrata e.g. B4+
+            elif match_object := re.match(r"(B|K)\d\+?$", token):
+                last_action = "custom_unit"
+                continue
             else:
                 raise RuntimeError(
                     f"Word '{token}' was not recognised as a valid word in the exercise line: '{entry}'. Valid words can be:\n  exercise names - alphabetic strings, e.g. thirty degree incline bench press,\n  weight - decimal numbers, e.g. 40.25\n  sets and reps - number of sets and reps separated by the letter 'x', e.g. 5x10"

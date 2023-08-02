@@ -1,4 +1,4 @@
-Alias,BodybuildingcomId
+alias,exercise
 barbell row,bent over barbell row
 bench,barbell bench press wide grip
 cable y raise,standing low pulley deltoid raise

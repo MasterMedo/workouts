@@ -724,7 +724,7 @@
 
 8.4.2023. 15:00
   deadlift 37.5 57.5 67.5 x12 67.5 x8
-  bicep curl 7.5 10 12.5 12.5 x12
+  dumbbell bicep curl 7.5 10 12.5 12.5 x12
   barbell row 37.5 4x12
   squat 0 37.5 57.5 67.5 x12
 
@@ -736,3 +736,146 @@
   squat 37.5 57.5 67.5 x12 67.5 x8
   deadlift 37.5 4x12
   barbell row 37.5 4x12
+
+11.4.2023. 20:00
+  deadlift 37.5 3x12
+  barbell row 37.5 2x12
+
+15.4.2023. 8:00
+  bench press 20 40 50 60 x12
+  squat 30 40 50 60 x12
+  romanian deadlift 30 30 40 50 x12
+  one leg standing dumbbell calf raise 20 4x12
+
+16.4.2023. 19:00
+  deadlift 37.5 57.5 x12 67.5 2x6
+  row 27.5 4x12
+
+19.4.2023. 19:00
+  modified curl up 12s x6
+  side plank 12s x6
+  bird dog 12s x6
+  deadlift 47.5 2x10 67.5 2x6 47.5 3x12
+  bench press 47.5 3x10 67.5 x3
+  hip thrust 47.5 4x10
+  barbell row 47.5 4x10
+
+21.4.2023. 21:00
+  bench press 47.5 x12 57.5 x9 2x8
+  squat 47.5 4x10
+
+22.4.2023. 10:00
+  modified curl up 12s x6
+  side plank 12s x6
+  bird dog 12s x6
+  deadlift 47.5 4x8
+  hip thrust 47.5 57.5 67.5 x12
+  dumbbell bicep curl 12.5 x12 15 x10 2x8
+  t bar row 57.5 4x10
+
+24.4.2023. 19:30
+  bench press 27.5 47.5 57.5 x12 67.5 x3 x5 47.5 3x12
+
+29.4.2023. 10:00
+  bench press 47.5 60 x12 70 60 x3 50 x12
+  squat 50 60 x10
+
+30.4.2023. 18:00
+  mcgill big three 20s x4
+  suitcase carry 15 10 x2
+  deadlift 20 40 x12 60 6x1
+
+3.5.2023. 20:00
+  mcgill big three 15s x3
+  squat 40 4x15
+
+6.5.2023. 9:00
+  mcgill big three 20s x4
+  bench press 40 4x15
+  dumbbell bicep curl 12.5 4x12
+  deadlift 40 2x15 60 2x8
+
+7.5.2023. 10:30
+  squat 60 5x12
+  suitcase carry 10 x3 15 x1
+  hip thrust 60 4x12
+  lying leg raises x1
+  barbell bicep curl 20 4x12
+  barbell row 20 4x20
+  overhead barbell press 20 4x12
+
+11.5.2023. 22:00
+  dip 4x8
+  pull up 3x8
+  deadlift 20 3x10 50 1x10 80 1x3
+  push up 4x12
+  barbell row 20 3x20
+  clean and press 20 2x10
+
+13.5.2023. 19:30
+  clean and press 20 4x10
+  hip thrust 20 3x10
+  squat 50 70 x10 80 x2
+
+23.5.2023. 10:00
+  deadlift 40 4x12
+  barbell row 40 4x12
+  pull up 4x10
+
+26.5.2023. 11:00
+  bench press 40 50 1x12 60 2x8
+  dip 4x8
+
+1.6.2023. 21:00
+  bench press 60 3x8
+  around the world 15 2x12
+  suitcase carry 15 x2
+
+2.7.2023. 10:00
+  deadlift 40 4x12
+  pull up 4x8
+  mcgill big three 15s x4
+
+17.7.2023. 19:00
+  bench press 50 6x12
+  push up 6x6
+
+18.7.2023. 19:00
+  deadlift 50 4x10
+
+20.7.2023. 19:300
+  squat 50 4x10
+
+21.7.2023. 13:00
+  bench press 50 4x12
+
+22.7.2023. 10:00
+  boulder 4 B1 7 B1+ 5 B2 7 B2+
+
+23.7.2023. 14:00
+  trail running 30min
+
+24.7.2023. 15:00
+  deadlift 50 4x12
+
+25.7.2023. 15:00
+  bench press 50 x5 40 3x12
+  dip 2x10
+  dumbbell bench press 12.5 2x12
+  dumbbell fly 5 10 x10
+  push up x12
+
+27.7.2023. 10:00
+  via ferrata K4 30min
+  trail running 10min
+
+30.7.2023. form 10:00
+  squat 20 4x10 30 40 50 60 70 x10
+  bench press 20 4x10
+  barbell curl 20 4x10
+  front squat 20 4x10
+  deadlift 20 4x10
+  overhead barbell press 20 4x10
+  romanian deadlift 20 4x10
+  upright barbell row 20 4x10
+  barbell row 20 4x10

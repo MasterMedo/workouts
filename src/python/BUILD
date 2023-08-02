@@ -6,9 +6,9 @@ py_binary(
   ],
   data = [
     "//datasets/workouts:workouts_txt",
-    "//datasets/aliases:aliases_txt",
-    "//datasets/exercises/bodybuilding.com:exercises_csv",
-    "//datasets/exercises/enrichment:enrichment_csv",
+    "//datasets/exercises:aliases_txt",
+    "//datasets/bodybuildingcom:exercises_csv",
+    "//datasets/exercises:enrichment_csv",
   ],
 )
 
