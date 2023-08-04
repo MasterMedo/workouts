@@ -20,7 +20,7 @@ py_binary(
   ],
   data = [
     "//datasets/workouts:workouts_txt",
-    "//datasets/exercises/bodybuilding.com:exercises_csv",
+    "//datasets/bodybuildingcom:exercises_csv",
   ],
 )
 
