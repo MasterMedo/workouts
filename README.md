@@ -27,11 +27,10 @@
 
 You record your exercises in `datasets/workouts/workouts.txt` in the following format:
 ```
-TIMESTAMP
-  EXERCISE_NAME WEIGHT SETSxREPS
-  EXERCISE_NAME WEIGHT SETSxREPS WEIGHT SETSxREPS
+DATE [DESCRIPTION]
+  EXERCISE_NAME ([WEIGHT][UNIT] [SETS]xREPS)...
 
-2023-04-13 17:30
+2023.04.13 17:30
   squat 80kg 4x12
   deadlift 70kg x12 80kg 2x5 90kg x3
 ```
