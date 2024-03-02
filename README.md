@@ -43,7 +43,7 @@ Then you run `analysis/workouts-analysis.py` and it draws the progress of the ma
 # How I use it
 
 While doing a workout, I write workouts in Google Keep on my phone.
-Every so often, I copy those notes into the `/datasets/workouts/workouts.txt` on my laptop and run the `/analysis/workouts-analysis.py` script.
+Every so often, I copy those notes into the `/datasets/workouts/workouts.txt` and run `blaze run src/python:analyse_workouts`.
 Then I inspect the maximum weight and weight volume progress on particular exercises and adjust my future workouts to maintain the progress.
 
 The goal is to keep progressively increasing volume and/or maximum weight.
