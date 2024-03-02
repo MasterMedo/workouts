@@ -57,7 +57,9 @@ with open(WORKOUTS_PATH, "r") as f:
 workouts_sets_and_reps = []
 for workout in workouts:
     workout = iter(workout.split("\n"))
-    date, *description, time = next(workout).split()
+    date, *description = next(workout).split()
+    if len(description):
+        _ = description.pop() # I used to put up time of day in description
     description = " ".join(description)
     date = datetime.strptime(date, "%d.%m.%Y.")
 

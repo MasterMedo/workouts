@@ -879,3 +879,82 @@
   romanian deadlift 20 4x10
   upright barbell row 20 4x10
   barbell row 20 4x10
+
+19.2.2024.
+  nordic curl -45 4x12
+  banded leg curl 15 4x10
+  squat 30 4x10
+  sissy squat 4x10
+  lateral banded walk 4x20
+  one leg standing dumbbell calf raise 4x20
+  hip thrust 60 4x10
+
+20.2.2024.
+  bench press 40 4x10
+  dip -20 4x10
+  dumbbell overhead press 10 4x10
+  push up 4x10
+  dumbbell fly 10 4x10
+  dumbbell kickback 10 4x10
+
+21.2.2024.
+  nordic curl -45 4x10
+  banded leg curl 15 4x10
+  squat 60 4x10
+  sissy squat 4x10
+  lateral banded walk 4x10
+  one leg standing dumbbell calf raise 4x10
+  hip thrust 60 4x10
+
+22.2.2024.
+  pull up -20 4x10
+  bicep curl 10 4x10
+  barbell row 40 4x10
+
+24.02.2024.
+  nordic curl -25 4x10
+  banded leg curl 15 4x10
+  squat 70 4x10
+  sissy squat 4x10
+  lateral banded walk 4x10
+  one leg standing dumbbell calf raise 4x10
+  hip thrust 70 4x10
+
+25.02.2024.
+  bench press 70 4x10
+  dip 4x10
+  overhead press 12.5 4x10
+  push up 4x10
+  dumbbell fly 12.5 4x10
+  dumbbell kickback 12.5 4x10
+
+26.02.2024.
+  nordic curl -25 4x10
+  banded leg curl 15 4x10
+  squat 80 4x10
+  sissy squat 4x10
+  lateral banded walk 4x10
+  one leg standing dumbbell calf raise 4x10
+  hip thrust 80 4x10
+
+27.02.2024.
+  pull up 4x10
+  bicep curl 12.5 4x10
+  barbell row 60 4x10
+  reverse dumbbell fly 12.5 4x10
+
+29.02.2024.
+  nordic curl -25 4x10
+  banded leg curl 15 4x10
+  squat 80 4x10
+  sissy squat 4x10
+  lateral banded walk 4x10
+  one leg standing dumbbell calf raise 4x10
+  hip thrust 80 4x10
+
+02.03.2024.
+  lying neck rotation 4x10
+  lying neck tilt 2.5 4x10
+  lying neck extension 2.5 4x10
+  lying reverse neck extension 2.5 4x10
+  barbell shrug 30 1x10 60 3x10
