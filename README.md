@@ -35,7 +35,7 @@ DATE [DESCRIPTION]
   deadlift 70kg x12 80kg 2x5 90kg x3
 ```
 
-Then you run `analysis/workouts-analysis.py` and it draws the progress of the maximum weight you lifted and total weight volume lifted on a particular day.
+Then you run `blaze run src/python:analyse_workouts` and it draws the progress of the maximum weight you lifted and total weight volume lifted on a particular day.
 
 ![](./img/squat.png)
 
